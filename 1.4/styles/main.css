@@ -1,6 +1,10 @@
 /* Main style file */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: grey;
+  background: white;
   margin: 0;
 }
 
@@ -9,22 +13,47 @@ nav {
     height: 60px;
 }
 
+video {
+  background: black;
+  width: 678;
+
+}
+
+main {
+  width: 678px;
+}
+
+article {
+  background: white;
+}
+
+aside {
+  float: right;
+}
+
 .logo {
   height: 50px;
   display: inline-block;
 }
 
+
+
 .search {
   width: 500px;
-  height: 10px;
+  height: 50%;
   display: inline-block;
 }
 
 .submit__bar {
   display: inline-block;
+  vertical-align: top;
 }
 
 .user__pic {
   height: 34px;
   width: 40px;
+}
+
+.subscribe {
+  background: red;
 }
