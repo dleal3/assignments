@@ -1,11 +1,14 @@
 /* Main style file */
-
-body {
-  font-family: Helvetica;
-  color: black;
-}
+li {
+  display: inline;
+  }
 
 .logo {
   width: 50px;
   display: inline-block;
+}
+
+.search {
+  display: inline;
+
 }

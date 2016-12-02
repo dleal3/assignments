@@ -10,21 +10,30 @@
 
   <body>
     <nav> <!-- Start of navigation bar -->
-      <a href="#">
-      <img src="assets/YouTube.png"
-             alt="youtube logo"
-             class="logo"/>
-      </a>
-
-      <form action="search" method="GET">
-        <input type="text" name="search" value="the matrix pill">
-        <input type="image" src="/index.png" alt="Search">
-        <button type="button" name="Upload">Upload
-        </button>
+      <li>
         <a href="#">
-          <img src="assets/user-corner.jpg" alt="user picture" />
+        <img
+        src="assets/YouTube.png"
+        alt="Youtube logo"
+        class="logo">
         </a>
-      </form>
+      </li>
+      <li>
+        <form
+        class="search"
+        action="#/search"
+        method="GET"></li>
+        <li>
+          <input type="text">
+          <input type="submit"
+                 value="search">
+        </li>  
+          <a href="#">
+            <img src="assets/user-corner.jpg" alt="user picture" />
+          </a>
+        </form>
+
+
   </nav> <!-- Closing of navigation bar -->
     <main> <!-- Open of video section -->
       <video src="videofile.ogg" autoplay poster="posterimage.jpg">
