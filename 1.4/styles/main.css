@@ -1,18 +1,30 @@
 /* Main style file */
-li {
-  display: inline;
-  }
+body {
+  background: grey;
+  margin: 0;
+}
+
+nav {
+    background: white;
+    height: 60px;
+}
 
 .logo {
-  width: 50px;
+  height: 50px;
   display: inline-block;
 }
 
 .search {
-  display: inline;
-
+  width: 500px;
+  height: 10px;
+  display: inline-block;
 }
 
 .submit__bar {
-  display: inline;
+  display: inline-block;
+}
+
+.user__pic {
+  height: 34px;
+  width: 40px;
 }
