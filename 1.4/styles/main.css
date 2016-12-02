@@ -1,0 +1,11 @@
+/* Main style file */
+
+body {
+  font-family: Helvetica;
+  color: black;
+}
+
+.youtube_logo {
+  width: 90px;
+  display: inline-block;
+}
