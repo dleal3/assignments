@@ -50,8 +50,9 @@ aside {
 }
 
 .user__pic {
-  height: 34px;
-  width: 40px;
+  width: 30px;
+  border-radius: 100%;
+
 }
 
 .subscribe {
