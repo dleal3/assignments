@@ -15,16 +15,18 @@ nav {
 
 video {
   background: black;
-  width: 678;
-
+  height: 400px;
+  margin-left: 70px;
 }
 
 main {
   width: 678px;
 }
 
-article {
+.section1 {
   background: white;
+  margin-left: 70px;
+  width: 800px;
 }
 
 aside {
