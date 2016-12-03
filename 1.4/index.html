@@ -23,10 +23,13 @@
                    type="text">
           <input class="submit__bar"
                     type="submit">
+      <div
+            class="nav__aside">
+            <a href="#"
             <img src="assets/user-corner.jpg"
                  alt="user pic"
                  class="user__pic">
-
+      </div> 
       </form>
   </nav> <!-- Closing of navigation bar -->
     <main> <!-- Open of video section -->
@@ -42,19 +45,28 @@
        </header>
        <a href="#">
        <img src="assets/user.jpg"
-            alt="user profile image">
+            alt="user profile image"
+            class="cat__image">
        </a>
-         <h4>
-           Freestyler 354
-         </h4>
-         <button class="subscribe">Subscribe
-         </button>
-         <h2 class="views">364,420 views
-         </h2>
-         <button>Add to</button>
-         <button>Share</button>
-         <button>More</button>
-         <button>Like</button>
+
+       <!-- I put all the cat user info in a form thinking I might be able to manipulate it all in css. I wanna place this content on the side of the cat__image -->
+       <div>
+         <form class="cat__user" action="index.html" method="post">
+           <h4 class="freestyler"
+           vertical-align= text-top;>
+             Freestyler 354
+           </h4>
+           <button class="subscribe">Subscribe
+           </button>
+
+           <h2 class="views">364,420 views
+           </h2>
+           <button>Add to</button>
+           <button>Share</button>
+           <button>More</button>
+           <button>Like</button>
+         </form>
+      </div>
      </article>
    </section>
 

@@ -4,7 +4,7 @@
 }
 
 body {
-  background: white;
+  background: grey;
   margin: 0;
 }
 
@@ -31,6 +31,11 @@ aside {
   float: right;
 }
 
+div {
+  display: inline-block
+
+}
+
 .logo {
   height: 50px;
   display: inline-block;
@@ -50,6 +55,7 @@ aside {
 }
 
 .user__pic {
+  height: 34px;
   width: 30px;
   border-radius: 100%;
 
@@ -57,4 +63,23 @@ aside {
 
 .subscribe {
   background: red;
+}
+
+.cat__image {
+  height: 46px;
+  width:  46px;
+}
+/* */
+.cat__user {
+  background: white;
+}
+
+h4 {
+  width: 187.45;
+  height: 18;
+  padding: 0;
+}
+
+.nav__aside {
+    float: right;
 }
