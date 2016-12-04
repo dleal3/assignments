@@ -146,6 +146,7 @@ width: 100px;
 
 .the_matrix {
   display: inline-block;
+
 }
 
 .dipoman {
@@ -154,5 +155,18 @@ width: 100px;
 
 .dipoman_views {
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+.construct {
+  display: inline-block;
+}
+
+.galactic_archive {
+  margin: 0;
+}
+
+.galactic_views {
+  margin: 0;
+  padding-bottom: 10px;
 }
