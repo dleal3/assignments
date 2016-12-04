@@ -15,7 +15,7 @@ nav {
 
 video {
   background: black;
-  height: 400px;
+  height: 300px;
   margin-left: 70px;
 }
 
@@ -26,11 +26,15 @@ main {
 .section1 {
   background: white;
   margin-left: 70px;
-  width: 800px;
+  width: 600px;
+  display: inline-block;
+  height: 90px;
 }
 
-aside {
-  float: right;
+.video__suggestions {
+  height: 500px;
+  width: 375px;
+
 }
 
 div {
@@ -70,18 +74,50 @@ div {
 .cat__image {
   height: 46px;
   width:  46px;
-}
-/* */
-.cat__user {
-  background: white;
+  display: inline-block;
+  margin: 0;
 }
 
-h4 {
-  width: 187.45;
-  height: 18;
-  padding: 0;
+.article1 {
+  width: 748px;
+  height: 45px;
+  display: inline-block;
+  margin-top: 0;
+}
+
+.cat__user {
+  background: white;
+  margin: 0;
+  width: 50px;
+}
+
+.freestyler {
+margin: 0;
+width: 100px;
 }
 
 .nav__aside {
   float: right;
+}
+
+.h2 {
+  margin: 0;
+
+}
+
+.subscribe {
+  width: 80px;
+  display: inline-block;
+}
+
+.views {
+  display: inline-block;
+  margin: 0;
+  float: right;
+  width: 200px;
+}
+
+.video__suggestion__images {
+  height: 82px;
+  width: 150px;
 }

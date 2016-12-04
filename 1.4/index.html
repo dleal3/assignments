@@ -6,6 +6,7 @@
     <title>
       Youtube
     </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -21,8 +22,8 @@
             method="get">
           <input class="search"
                    type="text">
-          <input class="submit__bar"
-                    type="submit">
+          <i class="fa fa-search"></i>
+
       </form>
       <div class="nav__aside">
         <a href="#"
@@ -42,16 +43,15 @@
       <!-- Closing of video section -->
 
    <section class="section1">
-     <h2>The Matrix (1999) - The Pill scene
+     <h2 class="h2">The Matrix (1999) - The Pill scene
      </h2>
      <a href="#">
      <img src="assets/user.jpg"
           alt="user profile image"
           class="cat__image">
      </a>
-     <article>
-       <!-- I put all the cat user info in a form thinking I might be able to manipulate it all in css. I wanna place this content on the side of the cat__image -->
-       <div>
+     <article class="article1">
+
          <form class="cat__user"     action="index.html" method="post">
            <h4 class="freestyler"
            vertical-align= text-top;>
@@ -60,16 +60,16 @@
            <button class="subscribe">Subscribe
            </button>
 
-           <h2 class="views">364,420 views
-           </h2>
-            </article>
+             <p class="views">364,420 views
+             </p>
+     </article>
 
            <button>Add to</button>
            <button>Share</button>
            <button>More</button>
            <button>Like</button>
          </form>
-      </div>
+
 
    </section>
 
@@ -86,32 +86,36 @@
 
     </main>
 
-    <aside class="">
+    <aside class="video__suggestions">
       <h6>Up next</h6>
 
       <article class="">
-        <img src="assets/suggestion-1.jpg" alt="Matrix Pic" />
+        <img src="assets/suggestion-1.jpg" alt="Matrix Pic"
+             class="video__suggestion__images"/>
         <a href="#">The.Matrix 1999(welcome to the real world)</a>
         <p>dimopan</p>
         <p>463,371 views</p>
       </article>
 
       <article class="">
-        <img src="assets/suggestion-2.jpg" alt="Construct Pic" />
+        <img src="assets/suggestion-2.jpg" alt="Construct Pic"
+        class="video__suggestion__images"/>
         <a href="#">"The Matrix" (1999) -- 'Construct' Scenes</a>
         <p>Galactic Archive</p>
         <p>708,357 views</p>
       </article>
 
       <article class="">
-        <img src="assets/suggestion-3.jpg" alt="Morpheus Picture" />
+        <img src="assets/suggestion-3.jpg" alt="Morpheus Picture"
+        class="video__suggestion__images" />
         <a href="#">Morpheus explains what is the matrix</a>
         <p>Jason Newsted</p>
         <p>584,308 views</p>
       </article>
 
       <article class="">
-        <img src="assets/suggestion-4.jpg" alt="Neo Picture" />
+        <img src="assets/suggestion-4.jpg" alt="Neo Picture"
+        class="video__suggestion__images"/>
         <a href="#">Film Theory: Neo ISN'T The One in The Matrix Trilogy</a>
         <p>The Film Theorists</p>
         <p>4,992,777 views</p>
