@@ -116,7 +116,6 @@ width: 100px;
 }
 
 .views {
-  display: inline-block;
   margin: 0;
   width: 200px;
 }
@@ -128,7 +127,7 @@ width: 100px;
 
 .video__suggestion__images {
   height: 100px;
-  width: 375px;
+  width: 175px;
 }
 
 .upload {
