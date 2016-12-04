@@ -34,7 +34,7 @@ main {
 }
 
 .video__suggestions {
-  height: 500px;
+  height: 900px;
   width: 375px;
   float: right;
   background-color: rgb(255,255,255);
@@ -142,4 +142,17 @@ width: 100px;
   text-decoration: none;
   margin: 30px;
   padding: 5px;
+}
+
+.the_matrix {
+  display: inline-block;
+}
+
+.dipoman {
+  margin: 0;
+}
+
+.dipoman_views {
+  margin: 0;
+  padding-bottom: 5px;
 }
