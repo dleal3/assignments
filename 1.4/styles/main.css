@@ -58,7 +58,7 @@ div {
 
 
 .search {
-  width: 500px;
+  width: 600px;
   height: 50%;
   display: inline-block;
 }
@@ -88,7 +88,7 @@ div {
 }
 
 .article1 {
-  width: 748px;
+  width: 100px;
   height: 45px;
   display: inline-block;
   margin-top: 0;
@@ -136,8 +136,13 @@ width: 100px;
 
 .views {
   margin: 0;
-  width: 600px;
+  width: 540px;
   text-align: right;
+}
+
+.buttons {
+  display: block;
+
 }
 
 .add_to {
