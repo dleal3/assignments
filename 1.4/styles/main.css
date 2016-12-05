@@ -15,7 +15,7 @@ nav {
 
 .video {
   background: black;
-  height: 300px;
+  height: 400px;
   margin-left: 70px;
 }
 
@@ -30,7 +30,7 @@ main {
   margin-left: 70px;
   width: 600px;
   display: inline-block;
-  height: 150px;
+  height: 180px;
 }
 
 .video__suggestions {
@@ -38,7 +38,7 @@ main {
   width: 375px;
   float: right;
   background-color: rgb(255,255,255);
-  margin-right: 50px;
+  margin-right: 90px;
 
 }
 
@@ -102,13 +102,9 @@ width: 100px;
 }
 
 .uploaded_by {
-  padding-left: 70px;
-  margin-bottom: 0;
+  margin-left: 70px;
+  background: white;
 }
-
-
-
-
 
 .nav__aside {
   float: right;
@@ -127,6 +123,8 @@ width: 100px;
 .views {
   margin: 0;
   width: 200px;
+  padding-left: 500px;
+
 }
 
 .video__suggestion__images {
@@ -156,12 +154,11 @@ width: 100px;
 .movie_one {
   margin: 0;
   display: block;
-
 }
 
 .the_matrix {
   display: inline-block;
-
+  margin: 0;
 }
 
 .dipoman {
@@ -175,6 +172,7 @@ width: 100px;
 
 .construct {
   display: inline-block;
+  margin: 0;
 }
 
 .galactic_archive {
@@ -188,6 +186,7 @@ width: 100px;
 
 .morpheus {
   display: inline-block;
+  margin: 0;
 }
 
 .jason_newsted {
@@ -201,10 +200,13 @@ width: 100px;
 
 .film_theory {
   display: inline-block;
+  margin: 0;
+  font-size: 15px;
 }
 
 .the_film_theorists {
   margin: 0;
+  
 }
 
 .the_film_theorists_views {
