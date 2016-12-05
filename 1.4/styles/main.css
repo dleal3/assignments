@@ -17,6 +17,7 @@ nav {
   background: black;
   height: 400px;
   margin-left: 70px;
+
 }
 
 main {
@@ -105,6 +106,13 @@ width: 100px;
   margin-left: 70px;
   background: white;
 }
+.may{
+  margin-bottom: 0;
+}
+
+.neo {
+  font-size: 13px
+}
 
 .nav__aside {
   float: right;
@@ -159,57 +167,71 @@ width: 100px;
 .the_matrix {
   display: inline-block;
   margin: 0;
+  font-size: 13px;
 }
 
 .dipoman {
   margin: 0;
+  font-size: 10px;
 }
 
 .dipoman_views {
   margin: 0;
   padding-bottom: 0;
+  font-size: 10px;
 }
 
 .construct {
   display: inline-block;
   margin: 0;
+  font-size: 13px;
 }
 
 .galactic_archive {
   margin: 0;
+  font-size: 10px;
+
 }
 
 .galactic_views {
   margin: 0;
   padding-bottom: 10px;
+  font-size: 10px;
+
 }
 
 .morpheus {
   display: inline-block;
   margin: 0;
+  font-size: 13px;
+
 }
 
 .jason_newsted {
   margin: 0;
+  font-size: 10px;
+
 }
 
 .jason_newsted_views {
   margin: 0;
   padding-bottom: 10px;
+  font-size: 10px;
 }
 
 .film_theory {
   display: inline-block;
   margin: 0;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .the_film_theorists {
   margin: 0;
-  
+  font-size: 10px;
 }
 
 .the_film_theorists_views {
   margin: 0;
   padding-bottom: 10px;
+  font-size: 10px;
 }
