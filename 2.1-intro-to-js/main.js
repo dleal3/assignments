@@ -13,7 +13,7 @@ givenName = "Tim";
 
 givenName = "JD";
 // Q: What is `givenName` set to right now?
-// A: So I would guess that the given name now equals "Tim" and "JD"
+// A: "JD"
 
 
 var greeting = "Hello, how are you?";
@@ -49,13 +49,13 @@ var born = 1983;
 var today = 2015;
 // Answers Below:
 var TimsAge = today - born
-console.log(TimsAge);
+console.log("Tim is " + TimsAge + " years old." );
 
 
 
 // Store some information following in variables.
-var yourName = "Daniel "
-var instructorName = " Jason"
+var yourName = "Daniel"
+var instructorName = "Jason"
 
 // Update the variables above so the expression reads correctly.
 // Answers Below:
@@ -63,7 +63,7 @@ console.log(statement);
 
 // Final Statement
 var statement = yourName + " is taking a class at The Iron Yard, my instructor's name is " + instructorName;
-
+console.log(statement);
 
 
 
