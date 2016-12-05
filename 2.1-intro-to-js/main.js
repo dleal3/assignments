@@ -48,7 +48,7 @@ math = high - "5";
 var born = 1983;
 var today = 2015;
 // Answers Below:
-var TimsAge = today - born  
+var TimsAge = today - born
 console.log(TimsAge);
 
 
@@ -74,3 +74,5 @@ var statement = yourName + " is taking a class at The Iron Yard, my instructor's
 // ARRAY SYNTAX - AN ARRAY SYNTAX IS USED FOR A COLLECTION OF THINGS. THERE CAN BE AS BIG OR AS SMALL OF A COLLECTION OF THINGS INSIDE AN ARRAY. IF WE WANTED TO OPEN A CERTAIN "ITEM OR COLLECTION" WE WOULD USE THE [] SYNTAX IN SEQUENTIAL ORDER. (I.E - 0,1,2,3)
 
 // CONSOLE.LOG() - CONSOLE.LOG() ALLOWS US TO OPEN UP OR "CALL" AN ASSIGNED VARIABLE.
+
+// DOM - When browsers started supporting and implementing the Document Object Model (DOM), which allows us to have much richer interaction with web pages, JavaScript started to get more interesting.The DOM is an object representation of the document. In human words you can say that the DOM explains both the types, the values and the hierarchy of everything in the document. Using the DOM you can: Access any element in the document and manipulate its look, content and attributes. Create new elements and content and apply them to the document when and if they are needed.This means that we don’t have to rely on windows, frames, forms and ugly alerts any longer, and can give feedback to the user in the document in a nicely styled manner. REFERENCED THIS WEBSITE - https://www.w3.org/community/webed/wiki/What_can_you_do_with_JavaScript#The_downside_of_JavaScript
