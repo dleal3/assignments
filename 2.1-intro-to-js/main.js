@@ -48,7 +48,7 @@ math = high - "5";
 var born = 1983;
 var today = 2015;
 // Answers Below:
-var TimsAge = "Tim is " + today - born + " years old"
+var TimsAge = today - born  
 console.log(TimsAge);
 
 
@@ -73,4 +73,4 @@ var statement = yourName + " is taking a class at The Iron Yard, my instructor's
 
 // ARRAY SYNTAX - AN ARRAY SYNTAX IS USED FOR A COLLECTION OF THINGS. THERE CAN BE AS BIG OR AS SMALL OF A COLLECTION OF THINGS INSIDE AN ARRAY. IF WE WANTED TO OPEN A CERTAIN "ITEM OR COLLECTION" WE WOULD USE THE [] SYNTAX IN SEQUENTIAL ORDER. (I.E - 0,1,2,3)
 
-// CONSOLE.LOG() - CONSOLE.LOG() ALLOWS US TO OPEN UP OR "CALL" AN ASSIGNED VARIABLE. 
+// CONSOLE.LOG() - CONSOLE.LOG() ALLOWS US TO OPEN UP OR "CALL" AN ASSIGNED VARIABLE.
