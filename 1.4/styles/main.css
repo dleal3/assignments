@@ -144,6 +144,12 @@ width: 100px;
   padding: 5px;
 }
 
+.movie_one {
+  margin: 0;
+  display: block;
+
+}
+
 .the_matrix {
   display: inline-block;
 
@@ -155,7 +161,7 @@ width: 100px;
 
 .dipoman_views {
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 0;
 }
 
 .construct {
@@ -167,6 +173,19 @@ width: 100px;
 }
 
 .galactic_views {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.morpheus {
+  display: inline-block;
+}
+
+.jason_newsted {
+  margin: 0;
+}
+
+.jason_newsted_views {
   margin: 0;
   padding-bottom: 10px;
 }
