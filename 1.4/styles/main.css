@@ -66,6 +66,7 @@ div {
 .submit__bar {
   display: inline-block;
   vertical-align: top;
+  margin-top: 20px;
 }
 
 .user__pic {
