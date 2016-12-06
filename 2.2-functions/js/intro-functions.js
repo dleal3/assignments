@@ -14,7 +14,9 @@ var myObject = {
 function max(a, b){
     if(a>b){
       return a;
-    }else(b>a){
+    }else if(b>a){
+      return b;
+    }else {
       return b;
     }
 }
@@ -34,7 +36,23 @@ console.assert(isNaN(max("aaa","bbb")));
  */
 
 function maxOfThree(a, b, c){
-  if (a>b)
+  if(a>b){
+    return a;
+  } if(a>c){
+    return a;
+  }else{
+    if(c>a){
+      return c;
+    }
+  }
+ else{
+  if(b>c){
+    return b;
+  }else{
+    if(c>b){
+      return c;
+    }
+  }
 }
 
 console.assert(maxOfThree(1,3,2) === 3);
@@ -52,7 +70,15 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  */
 
 function isVowel(char){
-    // YOUR CODE HERE
+  var vowelsArray =[
+    "a","e","i","o","u",
+    "A", "E", "I", "O", "U"
+  ];
+  if(vowelsArray.indexof(char) === -1){
+    return false;
+  }else{
+    return true;
+  }
 }
 
 console.assert(isVowel(0) === false);
