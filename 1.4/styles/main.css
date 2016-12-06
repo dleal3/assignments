@@ -3,9 +3,13 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   background: rgb(241,241,241);
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 nav {
@@ -71,14 +75,14 @@ div {
 
 .user__pic {
   height: 34px;
-  width: 30px;
+  width: 40px;
   border-radius: 100%;
 
 }
 
 .subscribe {
   background: red;
-}
+ß}
 
 .cat__image {
   height: 46px;
@@ -96,8 +100,7 @@ div {
 
 .cat__user {
   background: white;
-  margin: 0;
-  width: 50px;
+  margin-top: 10px;
 }
 
 .freestyler {
