@@ -28,7 +28,9 @@ function doSomethingCool() {
 }
 
 // Put your answer below -------------------------
+function doSomethingCool(){
 
+}
 
 // -----------------------------------------------
 

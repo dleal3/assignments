@@ -79,40 +79,39 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  * and returns true if it is a vowel, false otherwise.
  */
 // Trying to write as I read
+// // function isVowel(char){
+//   var vowelsArray = [
+//     "a","e","i","o","u",
+//     "A", "E", "I", "O", "U"
+//   ]
+//   // Not sure if any of this is right!!
+//     if (isVowel) {
+//       return true;{
+//         else {
+//           return false;
+//         }
+//       }
+//     }
+//
+//   return true;{
+//     if (isVowel) {
+//     }else {
+//       return false;
+//     }
+//   }
+// }
 
 function isVowel(char){
   var vowelsArray = [
     "a","e","i","o","u",
     "A", "E", "I", "O", "U"
-  ]
-  // Not sure if any of this is right!!
-    if (isVowel) {
-      return true;{
-        else {
-          return false;
-        }
-      }
-    }
-
-  // return true;{
-  //   if (isVowel) {
-  //   }else {
-  //     return false;
-  //   }
-  // }
+  ];
+  if(vowelsArray.indexof(char) === -1){
+    return false;
+  }else{
+    return true;
+  }
 }
-
-// function isVowel(char){
-//   var vowelsArray = [
-//     "a","e","i","o","u",
-//     "A", "E", "I", "O", "U"
-//   ];
-//   if(vowelsArray.indexof(char) === -1){
-//     return false;
-//   }else{
-//     return true;
-//   }
-// }
 
 console.assert(isVowel(0) === false);
 console.assert(isVowel("B") === false);
@@ -134,14 +133,9 @@ console.assert(isVowel("E") === true);
 
  function rovarspraket(text){
 
-
-
  }
 
-
-
-
-
+// This is where I get lost.
 
 // function rovarspraket(text){
 //   var vowelsArray = [
@@ -178,7 +172,7 @@ console.assert(rovarspraket(0) === "0")
  */
 
 function reverse(str){
-  var
+  // var not sure what the var would be named
 }
 
 console.assert(reverse("books") === "skoob")
@@ -194,7 +188,7 @@ console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew
  */
 
 function findLongestWord(sentence){
-    // YOUR CODE HERE
+  // var not sure what the var would be named 
 }
 
 console.assert(findLongestWord("book dogs") === "book")
