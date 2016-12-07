@@ -188,7 +188,8 @@ console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew
  */
 
 function findLongestWord(sentence){
-  // var not sure what the var would be named 
+  // var not sure what the var would be named
+
 }
 
 console.assert(findLongestWord("book dogs") === "book")
