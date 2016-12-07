@@ -1,3 +1,5 @@
+
+// HAVE NO CLUE WHAT THIS AREA IS FOR
 var myObject = {
   superPower: "som text",
   anotherProperty: "something",
@@ -11,15 +13,25 @@ var myObject = {
  * and returns the largest of them. Use the if-then-else construct available in Javascript.
  */
 
-function max(a, b){
-    if(a>b){
-      return a;
-    }else if(b>a){
-      return b;
-    }else {
-      return b;
-    }
+function max(a,b){
+  if (a>b){
+    return a;
+  }else if (b>a) {
+    return b;
+// Not really understanding why we need to place another else return b.
+  } else {
+    return b;
+
+  }
 }
+// So I commented out the formula and tried to rewrite it from memory, but I had to use the reference for the last else return b; statement.
+    // if(a>b){
+    //   return a;
+    // }else if(b>a){
+    //   return b;
+    // }else {
+    //   return b;
+    // }
 
 console.assert(max(1,3) === 3);
 console.assert(max(0,3) === 3);
@@ -34,26 +46,24 @@ console.assert(isNaN(max("aaa","bbb")));
  * Define a function maxOfThree() that takes three
  * numbers as arguments and returns the largest of them.
  */
-
-function maxOfThree(a, b, c){
-  if(a>b){
+// Trying to write while I read the instructions
+function maxOfThree(a,b,c) {
+  if (a > b && > c){
     return a;
-  } if(a>c){
-    return a;
-  }else{
-    if(c>a){
-      return c;
-    }
-  }
- else{
-  if(b>c){
+  }else if (b > a && > c) {
     return b;
-  }else{
-    if(c>b){
-      return c;
-    }
+  }else {
+    return c;
   }
 }
+// function maxOfThree(a, b, c){
+//   if( a > b && a > c ){
+//     return a;
+//   }else if( b > a && b > c ){
+//     return b;
+//   }else{return c;}
+
+
 
 console.assert(maxOfThree(1,3,2) === 3);
 console.assert(maxOfThree(0,3,-1) === 3);
@@ -68,18 +78,41 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  * Write a function isVowel() that takes a character (i.e. a string of length 1)
  * and returns true if it is a vowel, false otherwise.
  */
+// Trying to write as I read
 
 function isVowel(char){
-  var vowelsArray =[
+  var vowelsArray = [
     "a","e","i","o","u",
     "A", "E", "I", "O", "U"
-  ];
-  if(vowelsArray.indexof(char) === -1){
-    return false;
-  }else{
-    return true;
-  }
+  ]
+  // Not sure if any of this is right!!
+    if (isVowel) {
+      return true;{
+        else {
+          return false;
+        }
+      }
+    }
+
+  // return true;{
+  //   if (isVowel) {
+  //   }else {
+  //     return false;
+  //   }
+  // }
 }
+
+// function isVowel(char){
+//   var vowelsArray = [
+//     "a","e","i","o","u",
+//     "A", "E", "I", "O", "U"
+//   ];
+//   if(vowelsArray.indexof(char) === -1){
+//     return false;
+//   }else{
+//     return true;
+//   }
+// }
 
 console.assert(isVowel(0) === false);
 console.assert(isVowel("B") === false);
@@ -96,12 +129,38 @@ console.assert(isVowel("E") === true);
  *
  * For example, rovarspraket("this is fun") should
  * return the string "tothohisos isos fofunon".
-
+// THIS IS JUST PLAIN EOEVOVILOL!!!
  */
 
-function rovarspraket(text){
-    // YOUR CODE HERE
-}
+ function rovarspraket(text){
+
+
+
+ }
+
+
+
+
+
+
+// function rovarspraket(text){
+//   var vowelsArray = [
+//     "a","e","i","o","u",
+//     "A", "E", "I", "O", "U"
+//   ];
+//   for(var i = 0; i < text.length; i++){
+//     var currentLetter = vowelsArray[i];
+//
+//     if(vowelsArray.indexof(char) === -1){
+//       var consonant = char;
+//       var doubledText = "o" + consonant;
+//
+//       text.splice(i, 0, doubledText );
+//     }
+//
+//   }
+//   return text;
+// }
 
 console.assert(rovarspraket("a") === "a")
 console.assert(rovarspraket("b") === "bob")
@@ -119,7 +178,7 @@ console.assert(rovarspraket(0) === "0")
  */
 
 function reverse(str){
-    // YOUR CODE HERE
+  var
 }
 
 console.assert(reverse("books") === "skoob")
