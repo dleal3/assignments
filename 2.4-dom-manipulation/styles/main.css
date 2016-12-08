@@ -1,47 +1,64 @@
 .clear-button {
-  background: green;
-
+  background: rgb(100,178,85);
+  
 }
 
 .num7-button {
-  background: green;
+  background: rgb(100,178,85);
 }
 
 .num8-button {
-  background: green;
+  background: rgb(100,178,85);
 }
 
 .num9-button {
-  background: green;
+  background: rgb(100,178,85);
 }
 
 .numForwardSlash-button {
-  background: green;
+  background: rgb(127,193,128);
 }
 
 .num4-button {
-  background: green;
+  background: rgb(100,178,85);
 }
 
 .num5-button {
-  background: green;
+  background: rgb(100,178,85);
 }
 .num6-button {
-  background: green;
+  background: rgb(100,178,85);
 }
 .numX-button {
-  background: green;
+  background: rgb(127,193,128);
 }
 
 .num1-button {
-  background: green;
+  background: rgb(100,178,85);
 }
 .num2-button {
-  background: green;
+  background: rgb(100,178,85);
 }
 .num3-button {
-  background: green;
+  background: rgb(100,178,85);
 }
 .numMinus-button {
-  background: green;
+  background: rgb(127,193,128);
+}
+
+.num0-button {
+  background: rgb(100,178,85);
+}
+
+.numPeriod-button {
+  background: rgb(100,178,85);
+}
+
+.numEquals-button {
+  background: rgb(100,178,85);
+}
+
+.numPlus-button {
+  background: rgb(127,193,128);
+
 }
