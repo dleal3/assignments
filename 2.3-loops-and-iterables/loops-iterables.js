@@ -53,9 +53,9 @@ console.assert(nicer("here son, your crappy sandwich is on the dang plate.") ===
 // PART 2: write a function called capitalizeAll(). It should take as input a sentence and capitalize the first letter of every word in the sentence.
 // [x] write function named capitalizeAll()
 // [x] going to need a for loop
-// [] going to need a if statement
-// [] going to need to create a var for the input
-// [] going to need to make new sentence with capital letters. (possibly using replace syntax)
+// [x] going to need a if statement
+// [x] going to need to create a var for the input
+// [x] going to need to make new sentence with capital letters. (possibly using replace syntax)
 function capitalizeAll(sentence){
   // since the string is what we need to convert, we use an array.
   var sentenceArray = sentence.split(" ");
@@ -81,60 +81,77 @@ console.assert(capitalizeAll('every day is like sunday.') === 'Every Day Is Like
 // PART 3: write a function called properSentences(). It should take as input a string and capitalize the first letter of every sentence in that string. (For our purposes, all sentences will end with periods. Write one that works with ? and ! and receive a gratifying high five, right on the hand!)
 // [x]write a function properSentenses()
 // [x]make a argument/input
-//[]
+//[x]make a reference to the paragraph
+//[x] make the paragraph array
+//[x] set it equal to where you want it split.
+//[x]create a loop that will run through the array
+
+
+// So what do we want to input? - A set of sententes in a string. Since there are several, we'll call it paragraph
+
+var paragraph = 'it was a fine morning. the wine was good. light slanted in through the cafe window.'
+
 function properSentenses(paragraph){
+  // we create a reference to the paragraph and say that we want to split at every period in that string.
+  var paragraphArray = paragraph.split(". ");
+// So we create a loop that will run through the array of the paragraph, and split at every period.
+  for (var i = 0; i < paragraphArray.length; i++) {
+    // then we create a variable for the currentSentence that will equal the paragraphArray. The i means we will do something in the array.
+    var currentSentence = paragraphArray[i];
+    // here we create a variable for the sentencewordArray that equals splitting between words
+    var sentenceWordsArray = currentSentence.split(" ");
 
-  var sentenceArray = sentence.split(".")
+    var currentwordArray = sentenceWordsArray[i];
 
-  for (var i = 0; i < sentenceArray.length; i++) {
-    var wordArray = sentenceArray[i].split("");
-    wordArray[0] = capitalizedLetter;
-    var joinedWord = wordArray.join(".")
-    sentenceArray[i] = joinedWord;
+  }
+
 }
 
-var joinedSentence = sentencesArray.join("")
-return joinedSentence;
 
-}
-
-// var paragraph = 'it was a fine morning. the wine was good. light slanted in through the cafe window.'
-//
 console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
 
 // PART 4: write a function called iPutTheFunIn(). It should take a string as input. The output should be a copy of the original string with the word 'fun' inserted into the center of the string.
+// [x]write a function called iPutTheFunIn()
+// [x]make an argument as a string/sentence
+// []create a loop for the argument
+// []
+// []
+// []
+function iPutTheFunIn(sentence){
+  var sentenceArray = sentence.slice
+}
 //
-// console.assert(iPutTheFunIn("funerary") === "funefunrary")
-// console.assert(iPutTheFunIn("reds") === "refunds")
-//
-// // PART 5: write a function called pipeline(). it should take three inputs: (1) a starting value, (2) a function, and (3) another function. it should use functions (2) and (3) on the starting value, one after the other, and return a new value that has been processed by both function (2) and function (3).
-//
-// // the following three tests all correspond to the pipeline() function.
-//
-// // test 1
-// var paragraph = 'dad bring your crappy self in here. i want a dang sandwich.'
-//
-// console.assert(pipeline(paragraph,nicer,properSentences) === "Mom bring your self in here. I want a sandwich.")
-//
-// // test 2
-// var squareNum = function(n){
-//     return n * n
-// }
-//
-// var addOne = function(n) {
-//     return n + 1
-// }
-//
-// console.assert(pipeline(7,squareNum,addOne) === 50)
-//
-// // test 3
-// var exclaimAll = function(arr) {
-//     var newArr = []
-//     for (var i = 0; i < arr.length; i ++) {
-//         newArr.push(arr[i] + '!')
-//     }
-// }
-//
-// var result = pipeline([10,20,30],squareDance,exclaimAll)
-// console.assert(result[1] === "400!")
-// console.assert(result[2] === "900!")
+console.assert(iPutTheFunIn("funerary") === "funefunrary")
+console.assert(iPutTheFunIn("reds") === "refunds")
+
+// PART 5: write a function called pipeline(). it should take three inputs: (1) a starting value, (2) a function, and (3) another function. it should use functions (2) and (3) on the starting value, one after the other, and return a new value that has been processed by both function (2) and function (3).
+
+// the following three tests all correspond to the pipeline() function.
+
+// test 1
+var paragraph = 'dad bring your crappy self in here. i want a dang sandwich.'
+
+console.assert(pipeline(paragraph,nicer,properSentences) === "Mom bring your self in here. I want a sandwich.")
+
+// test 2
+var squareNum = function(n){
+    return n * n
+}
+
+var addOne = function(n) {
+    return n + 1
+}
+
+console.assert(pipeline(7,squareNum,addOne) === 50)
+
+// test 3
+var exclaimAll = function(arr) {
+    var newArr = []
+    for (var i = 0; i < arr.length; i ++) {
+        newArr.push(arr[i] + '!')
+    }
+}
+
+var result = pipeline([10,20,30],squareDance,exclaimAll)
+console.assert(result[1] === "400!")
+console.assert(result[2] === "900!")
