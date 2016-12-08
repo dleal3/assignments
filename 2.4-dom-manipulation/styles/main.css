@@ -1,64 +1,100 @@
 .clear-button {
   background: rgb(100,178,85);
-  
+  border-style: hidden;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
+
+.input-area {
+  background: rgb(100,178,85);
+  width: 52px;
+  height: 10px;
 }
 
 .num7-button {
   background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
 }
 
 .num8-button {
   background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
 }
 
 .num9-button {
   background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
 }
 
 .numForwardSlash-button {
   background: rgb(127,193,128);
+  border-style: hidden;
 }
 
 .num4-button {
   background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
 }
 
 .num5-button {
   background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
 }
 .num6-button {
   background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
 }
 .numX-button {
   background: rgb(127,193,128);
+  border-style: hidden;
 }
 
 .num1-button {
   background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
 }
 .num2-button {
   background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
 }
 .num3-button {
   background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
 }
 .numMinus-button {
   background: rgb(127,193,128);
+  border-style: hidden;
 }
 
 .num0-button {
   background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
 }
 
 .numPeriod-button {
   background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
 }
 
 .numEquals-button {
   background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
 }
 
 .numPlus-button {
   background: rgb(127,193,128);
-
+  border-style: hidden;
 }
