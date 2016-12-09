@@ -13,23 +13,60 @@
   </head>
 
   <body>
+    <form
+    name="calc"
+    class="calculator"
+    action="index.html">
+    <table>
+      <tr>
+        <td><input data-js="cButton" class="numButton" type="button" value="c"></td>
+        <td colspan="3"><input data-js="inputAreaButton" class="inputButton" type="text"></td>
+      </tr>
+      <tr>
+        <td><input data-js="7-Button" class="numButton" type="button" value="7"></td>
+        <td><input data-js="8-Button" class="numButton" type="button" value="8"></td>
+        <td><input data-js="9-Button" class="numButton" type="button" value="9"></td>
+        <td><input data-js="divide-Button"class="symbolButton" type="button" value="/"></td>
+      </tr>
+      <tr>
+        <td><input data-js="4-Button" class="numButton" type="button" value="4"></td>
+        <td><input data-js="5-Button" class="numButton" type="button" value="5"></td>
+        <td><input data-js="6-Button" class="numButton" type="button" value="6"></td>
+        <td><input data-js="multiply-Button" class="symbolButton" type="button" value="x"></td>
+      </tr>
+      <tr>
+        <td><input data-js="1-Button" class="numButton" type="button" value="1"></td>
+        <td><input data-js="2-Button" class="numButton" type="button" value="2"></td>
+        <td><input data-js="3-Button" class="numButton" type="button" value="3"></td>
+        <td><input data-js="minus-Button" class="symbolButton" type="button" value="-"></td>
+      </tr>
+      <tr>
+        <td><input class="numButton" type="button" value="0"></td>
+        <td><input class="numButton" type="button" value="."></td>
+        <td><input class="numButton" type="button" value="="></td>
+        <td><input class="symbol-Button" type="button" value="+"></td>
+      </tr>
+    </table>
+  </form>
+
+    <!-- I commented out my previous work so that I could clean up the layout of my html. Used table syntax instnead of divs -->
     <!-- This first div contains the first button of clear, than has area for a header(h2) which will be an empty area -->
-    <div>
+    <!-- <div>
       <button
       class="clear-button"
       date-js="clearbuttonName">C
       </button>
-      <input class="input-area">
+      <input class="input-area"> -->
 <!-- we want this area after the clear button to be empty space -->
-      </input>
-    </div>
+      <!-- </input>
+    </div> -->
     <!-- Start a div with buttons for each of the numbers 7,8,9 and / -->
-    <div>
+    <!-- <div>
       <button
       class="num7-button"
       data-js="num7-buttonName">7
-      </button>
-
+      </button> -->
+<!--
       <button
       class="num8-button"
       data-js="num8-buttonName">8
@@ -41,9 +78,9 @@
 
       <button
       class="numForwardSlash-button" data-js="numForwardSlash-buttonName">/</button>
-    </div>
+    </div> -->
     <!-- make a div with buttons for each of the numbers 4,5,6,x -->
-    <div>
+    <!-- <div>
       <button
       class="num4-button" data-js="num4-buttonName">4</button>
       <button
@@ -52,9 +89,9 @@
       class="num6-button" data-js="num6-buttonName">6</button>
       <button
       class="numX-button" data-js="numX-buttonName">x</button>
-    </div>
+    </div> -->
     <!-- Create a div with seperate buttons for each 1,2,3 and - (minus)  -->
-    <div>
+    <!-- <div>
       <button
       class="num1-button" data-js="num1-buttonName">1</button>
       <button
@@ -78,7 +115,7 @@
       data-js="numPlus-buttonName">+</button>
 
 
-    </div>
+    </div> -->
   </body>
 
 

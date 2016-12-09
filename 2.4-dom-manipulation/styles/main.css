@@ -1,8 +1,40 @@
 /*Instead of writing a class for each button, write only two
 classes. One for numbers and One for special characters.*/
 
+body{
+  display: inline-block;
+  margin-left: 500px;
+  margin-top: 200px;
+  width: 400px;
+}
 
-.clear-button {
+
+.numButton {
+  background: rgb(100,178,85);
+  color: white;
+  border: none;
+  height: 70px;
+  width: 70px
+}
+
+.symbolButton {
+  background: rgb(127,193,128);
+  border: none;
+  margin-right: -5px;
+  height: 70px;
+  width: 70px
+}
+
+.input-Button {
+  width: 210px;
+  height: 66px;
+  background: rgb(100,178,85);
+}
+
+
+
+/*Commented out my previous classes so that i could clean up my layout*/
+/*.clear-button {
   background: rgb(100,178,85);
   border-style: hidden;
   color: white;
@@ -99,4 +131,4 @@ classes. One for numbers and One for special characters.*/
 .numPlus-button {
   background: rgb(127,193,128);
   border-style: hidden;
-}
+}*/
