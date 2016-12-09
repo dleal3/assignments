@@ -1,9 +1,11 @@
+/*Instead of writing a class for each button, write only two
+classes. One for numbers and One for special characters.*/
+
+
 .clear-button {
   background: rgb(100,178,85);
   border-style: hidden;
   color: white;
-  font-size: 10px;
-  text-align: center;
 }
 
 .input-area {
