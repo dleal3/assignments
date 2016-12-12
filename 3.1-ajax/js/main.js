@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   var xhr = new XMLHttpRequest();
 
-  xhr.open("GET", "http://www.omdbapi.com/?s=the+karate+kid&y=&plot=short&r=json");
+  xhr.open("GET", "http://www.omdbapi.com/?s=snow+white&y=&plot=short&r=json");
 
   xhr.addEventListener("load", function(e){
 
@@ -21,11 +21,14 @@ document.addEventListener("DOMContentLoaded", function(){
      movieArticleHTML += movieData.Title;
      movieArticleHTML += "</h2>";
      movieArticleHTML += `<img src='${movieData.Poster}'/>`;
-
-    //  movieArticleHTML += movieData.Poster;
+     movieArticleHTML += "<h3>";
+     movieArticleHTML += movieData.Year;
+     movieArticleHTML += "</h3>";
      movieArticleHTML += "</article>";
-     console.log(movieArticleHTML);
      moviesSectionElement.innerHTML += movieArticleHTML;
+
+
+
    });
  });
  xhr.send();
