@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
   xhr.addEventListener("load", function(e){
 
    var xhrData = this.response;
-
+   console.log(xhrData);
    var JSONData = JSON.parse(xhrData);
 
    var searchArray = JSONData.Search;
@@ -20,10 +20,11 @@ document.addEventListener("DOMContentLoaded", function(){
      movieArticleHTML += "<h2>";
      movieArticleHTML += movieData.Title;
      movieArticleHTML += "</h2>";
-     movieArticleHTML += "<img src='";
-     movieArticleHTML += movieData.Poster;
-     movieArticleHTML += "</article>";
+     movieArticleHTML += `<img src='${movieData.Poster}'/>`;
 
+    //  movieArticleHTML += movieData.Poster;
+     movieArticleHTML += "</article>";
+     console.log(movieArticleHTML);
      moviesSectionElement.innerHTML += movieArticleHTML;
    });
  });
