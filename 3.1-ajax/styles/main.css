@@ -1,1 +1,46 @@
 /**/
+
+body {
+  background: black;
+}
+
+.title {
+  font-size: 52px;
+  color: red;
+  font-family: cursive;;
+  font-style: italic;
+  text-align: center;
+}
+
+.image {
+  padding-left: 340px;
+  width: 600px;
+  /*align-items: center;*/
+  /*padding-right: 320px;*/
+}
+
+.year {
+  font-size: 32px;
+  color: red;
+  text-align: center;
+  font-family: cursive;;
+}
+
+.Rated {
+  font-size: 22px;
+  color: red;
+  text-align: center;
+  font-family: cursive;;
+}
+
+.Plot {
+  color: red;
+  text-align: center;
+  font-family: cursive;;
+}
+
+.Featuring {
+  color: red;
+  text-align: center;
+  font-family: cursive;;
+}

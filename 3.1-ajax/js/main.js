@@ -17,24 +17,26 @@ document.addEventListener("DOMContentLoaded", function(){
     var movieData = JSON.parse(xhrData);
 
      var movieArticleHTML = "<article>";
-     movieArticleHTML += "<h2>";
+     movieArticleHTML += "<h2 class=' ";
+     movieArticleHTML += "title'>";
      movieArticleHTML += movieData.Title;
      movieArticleHTML += "</h2>";
-     movieArticleHTML += `<img src='${movieData.Poster}'/>`;
-     movieArticleHTML += "<h3>";
-     movieArticleHTML += "Release Date: "
+
+     movieArticleHTML += `<img class="image" src='${movieData.Poster}'/>`;
+     movieArticleHTML += "<h3 class=' ";
+     movieArticleHTML += "year'>";
      movieArticleHTML += movieData.Year;
      movieArticleHTML += "</h3>";
-     movieArticleHTML += "<h3>";
-     movieArticleHTML += "Rated: "
+     movieArticleHTML += "<h3 class=' ";
+     movieArticleHTML += "Rated'>";
      movieArticleHTML += movieData.Rated;
      movieArticleHTML += "</h3>";
-     movieArticleHTML += "<h4>";
-     movieArticleHTML += "Plot: ";
+     movieArticleHTML += "<h4 class=' ";
+     movieArticleHTML += "Plot'>";
      movieArticleHTML += movieData.Plot;
      movieArticleHTML += "</h4>";
-     movieArticleHTML += "<h4>";
-     movieArticleHTML += "Featuring: "
+     movieArticleHTML += "<h4 class=' ";
+     movieArticleHTML += "Featuring'>";
      movieArticleHTML += movieData.Actors;
      movieArticleHTML += "</h4>";
      movieArticleHTML += "</article>";
