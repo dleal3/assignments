@@ -10,15 +10,11 @@ document.addEventListener("DOMContentLoaded", function(){
   xhr.addEventListener("load", function(e){
 
     var xhrData = this.response;
+    var JSONData = JSON.parse(xhrData);
 
-    console.log(xhrData);
+    console.log(JSONData);
 
   })
+  xhr.send();
 
-
-
-
-
-
-
-})
+  })
