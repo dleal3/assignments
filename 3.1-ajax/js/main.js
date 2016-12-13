@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
      movieArticleHTML += "</h2>";
 
      movieArticleHTML += `<img class="image" src='${movieData.Poster}'/>`;
+
      movieArticleHTML += "<h3 class=' ";
      movieArticleHTML += "year'>";
      movieArticleHTML += movieData.Year;
