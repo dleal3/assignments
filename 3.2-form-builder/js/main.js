@@ -16,14 +16,15 @@ document.addEventListener("DOMContentLoaded", function(){
     var formHTML = "";
 
     JSONData.forEach(function(inputData){
-
+      console.log(inputData.id);
     var labelString = `<label> ${inputData.label}</label>`;
     var inputString = `<input id="${inputData.id}" type="${inputData.type}"/>`;
+    // var iconString = `<icon>${inputData.icon}</icon>`;
 
 
     formHTML += labelString
     formHTML += inputString
-
+    // formHTML += iconString
     })
 
     bodyElement.innerHTML += formHTML
