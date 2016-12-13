@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function(){
       var placeholderString = "";
 
       if(inputData.type === "text"){
-        placeholderString = `<label> ${inputData.label}</label>`;
-        placeholderString = `<input id="${inputData.id}"
+        placeholderString += `<label> ${inputData.label}</label>`;
+        placeholderString += `<input id="${inputData.id}"
         type="${inputData.type}"/>`;
       }
 
