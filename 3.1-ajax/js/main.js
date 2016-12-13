@@ -42,8 +42,6 @@ document.addEventListener("DOMContentLoaded", function(){
      movieArticleHTML += "</h4>";
      movieArticleHTML += "</article>";
      moviesSectionElement.innerHTML += movieArticleHTML;
-
-
    })
 
    xhr.send();
