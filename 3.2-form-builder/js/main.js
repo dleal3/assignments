@@ -10,9 +10,16 @@ document.addEventListener("DOMContentLoaded", function(){
   xhr.addEventListener("load", function(e){
 
     var xhrData = this.response;
-    var JSONData = JSON.parse(xhrData);
 
-    console.log(JSONData);
+
+    var JSONData = JSON.parse(xhrData);
+    for (var i = 0; i < JSONData.length; i++){
+      // formElementArray[i]
+      var dataArray = JSONData[i];
+      console.log(dataArray);
+    }
+    // var searchArray = JSONData.Search;
+
 
   })
   xhr.send();
