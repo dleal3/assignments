@@ -1,7 +1,7 @@
 // Need to tell the system to wait for all content to be loaded
 document.addEventListener("DOMContentLoaded", function(){
   // Created a formDataElement
-  var bodyElement = document.querySelector("[data-js='bodyElement']");
+  var formArticleElement = document.querySelector("[data-js='form']");
 
   var xhr = new XMLHttpRequest();
 // Entered the webpage we are going to be pulling data from
@@ -11,23 +11,28 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var xhrData = this.response;
 
-    var JSONData = JSON.parse(xhrData);
+    var formData = JSON.parse(xhrData);
 
     var formHTML = "";
 
-    JSONData.forEach(function(inputData){
-      console.log(inputData.id);
-    var labelString = `<label> ${inputData.label}</label>`;
-    var inputString = `<input id="${inputData.id}" type="${inputData.type}"/>`;
-    // var iconString = `<icon>${inputData.icon}</icon>`;
+    formData.forEach(function(inputData){
+
+      var placeholderString = "";
+
+      if(inputData.type === "text"){
+        placeholderString = `<label> ${inputData.label}</label>`;
+        placeholderString = `<input id="${inputData.id}"
+        type="${inputData.type}"/>`;
+      }
 
 
-    formHTML += labelString
-    formHTML += inputString
-    // formHTML += iconString
+
+    formHTML += placeholderString
+    // formHTML += areaString
+      // formHTML += iconString
     })
 
-    bodyElement.innerHTML += formHTML
+    formArticleElement.innerHTML += formHTML
 
   });
   xhr.send();
