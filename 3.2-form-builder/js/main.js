@@ -1,38 +1,41 @@
 // Need to tell the system to wait for all content to be loaded
 document.addEventListener("DOMContentLoaded", function(){
-  // Created a formDataElement
-  var formArticleElement = document.querySelector("[data-js='form']");
-
-  var xhr = new XMLHttpRequest();
+  // Need to get the data from the website
+  var xhr = new XMLHttpRequest;
 // Entered the webpage we are going to be pulling data from
   xhr.open("GET", "http://json-data.herokuapp.com/forms");
 
   xhr.addEventListener("load", function(e){
 
-    var xhrData = this.response;
+    var responseData = JSON.parse(this.response);
 
-    var formData = JSON.parse(xhrData);
+    var formElement = document.querySelector("[data-js='form']")
 
-    var formHTML = "";
+    var allInputDataHtml = "";
 
-    formData.forEach(function(inputData){
+    responseData.forEach(function(inputData){
 
-      var placeholderString = "";
+      var inputDataPlaceholder = "";
 
-      if(inputData.type === "text"){
-        placeholderString += `<label> ${inputData.label}</label>`;
-        placeholderString += `<input id="${inputData.id}"
-        type="${inputData.type}"/>`;
+      if(inputData.type === "select"){
+        inputDataPlaceholder += `<select class="selector">`;
+
+        inputData.options.forEach(function(optionData){
+          inputDataPlaceholder += `<option label="${optionData.label}" value="${optionData.value}"</option>`;
+        })
+
+      }else{
+        inputDataPlaceholder += `<input class="textInput"
+        placeholder=" ${inputData.label}" type="${inputData.type}"
+        id="${inputData.id}" icon="${inputData.icon}">`;
+        console.log(inputData.icon);
       }
 
+      allInputDataHtml += inputDataPlaceholder;
 
+    });
 
-    formHTML += placeholderString
-    // formHTML += areaString
-      // formHTML += iconString
-    })
-
-    formArticleElement.innerHTML += formHTML
+    formElement.innerHTML += allInputDataHtml;
 
   });
   xhr.send();
