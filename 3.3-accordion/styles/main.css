@@ -2,28 +2,29 @@
 .body{
   background-size: cover;
   background-image: url(https://files.slack.com/files-pri/T37E93AFL-F3FK8ACR5/class_photos_ironyard-11.jpg);
-  background-color: ccccccccc
 }
 
 .tiy {
   text-align: center;
   font-family: fantasy;
-  color: black;
+  color: red;
 }
 
 .devs{
   text-align: center;
   font-family: fantasy;
-  color: black;
+  color: red;
 }
 
 .studentList__student {
   height: 30px;
   overflow: hidden;
   margin: 40px;
-  /*color: pink;*/
   text-align: right;
   transition: 2s;
+  color: red;
+  font-size: 20px;
+  font-style: oblique;
 }
 
 .expand {
