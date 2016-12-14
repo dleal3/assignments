@@ -1,0 +1,10 @@
+/* Write some CSS! */
+
+.studentList__student {
+  height: 30px;
+  overflow: hidden;
+}
+
+.expand {
+  height: 120px;
+}
