@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!--[x] Create a main section inside of body  -->
+<!--[x] Create H1 inside of main for 'Gifts to Buy heading' -->
+<!--[x] Create a Form inside of main underneath the H1 -->
+<!--[x] Create an Input section inside form for the text area -->
+<!--[x] Create a second input for the ADD 'button' -->
+<!--[x] Close the form -->
+
+<!--[] Outside of Form create a new 'Section' -->
 <html>
   <head>
     <meta charset="utf-8">
@@ -14,9 +22,27 @@
       <input class="item_textArea"
             data-js="item_textArea"
             placeholder="type the gift to buy here...">
-      <button class="form_AddButton"
-              data-js="form_AddButton">ADD</button>
+      <input class="form_AddButton"
+              data-js="form_AddButton"
+              type="submit"
+              value="ADD">
     </form>
+
+    <!-- Started new section beneath the form -->
+    <section class="item_section"
+             data-js="item_section">
+      <article class="item_article1"
+               data-js="item_article">
+        <button class="check_button"
+                data-js="checkButton">
+        </button>
+        <h2 class="h2_item"
+            data-js="giftItem">Cowboys Jersey</h2>
+        <h2 class="h2_price"
+            data-js="price">$25</h2>
+      </article>
+    </section>
+
     </main>
 
   </body>
