@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <!--[x] Create a main section inside of body  -->
 <!--[x] Create H1 inside of main for 'Gifts to Buy heading' -->
 <!--[x] Create a Form inside of main underneath the H1 -->
@@ -7,46 +7,146 @@
 <!--[x] Close the form -->
 
 <!--[] Outside of Form create a new 'Section' -->
+
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>3.4-Holiday Gift List</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title></title>
+    <script src=""http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"" charset="utf-8">
+    </script>
     <script src="js/main.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <main class="main">
-      <h1 class="main_h1">GIFTS TO BUY</h1>
-    <form action="#" class="item_form">
-      <input class="item_textArea"
-            data-js="item_textArea"
-            placeholder="type the gift to buy here...">
-      <input class="form_AddButton"
-              data-js="form_AddButton"
-              type="submit"
-              value="ADD">
-    </form>
+    <div class="input">
+      <h3>GIFTS TO BUY</h3>
+      <input
+      class="customerInput"
+      type="text"
+      value=""
+      id="item-input" placeholder="Enter shopping item..." autofocus>
+      <button
+      type="submit" class="addButton">ADD
+      </button>
+    </div>
 
-    <!-- Started new section beneath the form -->
-    <section class="item_section"
-             data-js="item_section">
-      <article class="item_article1"
-               data-js="item_article">
-        <button class="check_button"
-                data-js="checkButton">
-        </button>
-        <h2 class="h2_item"
-            data-js="giftItem">Cowboys Jersey</h2>
-        <h2 class="h2_price"
-            data-js="price">$25</h2>
-      </article>
-    </section>
+    <div class="list">
+    <table class="items">
+      <thead>
+        <tr>
+          <th
+          class="edit"
+          colspan="3">
+          <span>edit</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    </div>
 
-    </main>
 
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html> -->
+                            <!-- <html>
+                              <head>
+                                <meta charset="utf-8">
+                                <title>3.4-Holiday Gift List</title>
+                                <link rel="stylesheet" href="styles/main.css">
+                                <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                                <script src="js/main.js" charset="utf-8"></script>
+                              </head>
+                              <body>
+                                <main class="main">
+                                  <h1 class="main_h1">GIFTS TO BUY</h1>
+                                <form action="#" class="item_form">
+                                  <input class="item_textArea"
+                                        data-js="item_textArea"
+                                        placeholder="type the gift to buy here...">
+                                  <input class="form_AddButton"
+                                          data-js="form_AddButton"
+                                          type="submit"
+                                          value="ADD">
+                                </form> -->
+
+    <!-- Started new section beneath the form -->
+                          <!-- <section class="item_section"
+                                   data-js="item_section">
+                            <article class="item_article1"
+                                     data-js="item_article">
+                              <button class="check_button"
+                                      data-js="checkButton">
+                              </button>
+                              <h2 class="h2_item"
+                                  data-js="giftItem">Cowboys Jersey</h2>
+                              <h2 class="h2_price"
+                                  data-js="price">$25</h2>
+                            </article>
+                          </section>
+
+                          </main>
+
+                        </body>
+                      </html> -->
 
 
 <!-- <!DOCTYPE html>
