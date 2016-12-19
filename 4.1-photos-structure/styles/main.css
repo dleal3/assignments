@@ -1,13 +1,14 @@
 .myAlbums {
   text-align: center;
   background-color: darkgrey;
-  padding: 20px;
+  /*padding: 20px;*/
 }
 
 .firstRowimages {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   display: inline;
+  align-items: center;
 }
 
 .secondRowimages {
@@ -18,3 +19,32 @@
 /*.firstRow {
   display: inline;
 }*/
+
+.firstPicture{
+  /*border: solid black 1px;*/
+  height: 250px;
+  width: 200px;
+}
+
+.secondPicture {
+  /*border: solid black 1px;*/
+  height: 250px;
+  width: 200px;
+}
+
+.thirdPicture{
+  height: 250px;
+  width: 200px;
+}
+
+
+  .albumLink {
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  margin-top: -4px;
+  }
