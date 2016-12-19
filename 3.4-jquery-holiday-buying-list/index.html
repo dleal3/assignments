@@ -7,204 +7,42 @@
 <!--[x] Close the form -->
 
 <!--[x] Outside of Form create a new 'Section' -->
-
+<!--[x]  Create an article inside of section-->
+<!--[x]  We need a check button for this article-->
+<!--[x] We need a header for what we will use the check button for -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Gift List</title>
+    <title>3.4 Gift List</title>
     <link rel="stylesheet" href="styles/main.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" charset="utf-8"></script>
-    <script src="main.js" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
   </head>
-
   <body>
-    <main
-            class="main">
-      <h2
-            class="h2">GIFTS TO BUY
-      </h2>
-      <form
-            class="items_form"
-            action="index.html"
-            method="post">
-        <input
-            class="giftInputText"
-            data-js="text_input"
-            name="giftInput"
-            placeholder="enter gift item here..."
-            value=""></input>
-        <input
-            class="addButton"
-            data-js="submit"
-            type="submit"
-            name="submitItemToList"
-            value="ADD"></input>
-        <div
-            class="listItems__div"
-            data-js="divElement">
-          <article
-            class="listItem"
-            data-js="articles">
-          </article>
-          <article
-            class="totalAmount">
-            <p class="p__totalTextOnly">Total</p>
-            <p class="p">$</p>
-            <p class="p__totalCost">0</p>
-          </article>
-        </div>
-      </form>
+    <main class="main">
+      <h1 class="h1">GIFTS TO BUY</h1>
+      <form class="form" action="index.html" method="post">
+        <input data-js="text_input" class="enterGift" type="text" name="enterGift" value="" placeholder="type the gift you will regret buying here...."> <!-- need to data-js="" -->
+        <input data-js"submit" class="addButton" type="submit" name="submitItemEntered" value="ADD"> <!-- need to data-js="" -->
+      <!-- ******************************* start new section with an article for items listed ************************** -->
+      <section data-js="giftSection" class="listedGifts"> <!-- Thinking about using a DIV as a container -->
+        <article data-js="articles" class="giftItem"> <!-- need to data-js="" -->
+        <button class="checkButton"type="button" name="button"></button> <!-- need to data-js="" -->
+        <p class="Item">Dallas Cowboys Jersey</p> <!-- need to data-js="" -->
+        <p class="Price">$ 90</p> <!-- need to data-js="" -->
+        </article>
+        <article class="totalAmount">
+        <p class="total">Total</p>
+        <!-- <p class="p">$</p>
+        <p class="p__totalCost"        data-js="total">0</p> -->
+        </article>
+      </section>
+     </form>
     </main>
   </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script src=""http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"" charset="utf-8">
-    </script>
-    <script src="js/main.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="styles/main.css" media="screen" title="no title" charset="utf-8">
-  </head>
-  <body>
-    <div class="input">
-      <h3>GIFTS TO BUY</h3>
-      <input
-      class="customerInput"
-      type="text"
-      value=""
-      id="item-input" placeholder="Enter shopping item..." autofocus>
-      <button
-      type="submit" class="addButton">ADD
-      </button>
-    </div>
-
-    <div class="list">
-    <table class="items">
-      <thead>
-        <tr>
-          <th
-          class="edit"
-          colspan="3">
-          <span>edit</span>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-      </tbody>
-    </table>
-    </div>
-
-
-  </body>
-</html> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html> -->
-                            <!-- <html>
-                              <head>
-                                <meta charset="utf-8">
-                                <title>3.4-Holiday Gift List</title>
-                                <link rel="stylesheet" href="styles/main.css">
-                                <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-                                <script src="js/main.js" charset="utf-8"></script>
-                              </head>
-                              <body>
-                                <main class="main">
-                                  <h1 class="main_h1">GIFTS TO BUY</h1>
-                                <form action="#" class="item_form">
-                                  <input class="item_textArea"
-                                        data-js="item_textArea"
-                                        placeholder="type the gift to buy here...">
-                                  <input class="form_AddButton"
-                                          data-js="form_AddButton"
-                                          type="submit"
-                                          value="ADD">
-                                </form> -->
-
-    <!-- Started new section beneath the form -->
                           <!-- <section class="item_section"
                                    data-js="item_section">
                             <article class="item_article1"
@@ -223,89 +61,3 @@
 
                         </body>
                       </html> -->
-
-
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/main.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-    <!-- <script src="https://use.fontawesome.com/60c1d9e7b4.js"></script> -->
-    <!-- <script src="main.js" charset="utf-8"></script> -->
-  <!-- </head>
-
-  <body> -->
-    <!-- Made a header to go above all of the form content -->
-    <!-- Made a main section that we will put our form into -->
-  <!-- <div class="layered-paper">
-    <main class="main">
-      <h1>Gifts To Buy</h1> -->
-
-      <!-- Created a form  -->
-      <!-- <form action="#"
-            class="shoppingListForm">
-
-        <textarea class="shoppingListForm__text"
-                  data-js="shoppingListForm__text"
-                  placeholder="type the gift to buy here..."
-                  name="shoppingListText"></textarea>
-
-        <input class="shoppingListForm__submit"
-               data-js="shoppingListText__submit"
-               type="submit"
-               value="ADD">
-      </form>
-
-      <section data-js='shoppingListPosts'> -->
-           <!-- <article class="shoppingListpost">
-             <button class="button" name="button"></button>
-             <h2 class="itemDescription">Cowboys Jersey for Sister</h2>
-           </article> -->
-           <!-- <article class="articleOne">
-             <input type="checkbox" name="gift" value="jersey">
-             Cowboys Jersey for Sister<br>
-          </article>
-
-          <article class="articleTwo">
-              <input type="checkbox" name="gift" value="jersey" checked="checked">Spurs Jersey for Brother<br>
-
-           </article>
-
-           <article class="articleThree">Total<br>
-
-           </article> -->
-           <!-- <article class="shoppingListpost">
-             <button type="button" name="button"></button>
-             Lids gift card for brother
-           </article> -->
-       <!-- </section> -->
-
-
-          <!-- <i class="fa fa-check-circle-o" aria-hidden="true"></i> -->
-          <!-- need to place the src for img of a circle checkmark -->
-          <!-- <p class="shoppingListpost__text">
-            Spurs Hat for Brother $40
-          </p>
-          <p class="shoppingListpost__text">
-            Dallas Cowboy Jersey for Sister $90
-          </p>
-          <p class="shoppingListpost__text">
-            Starry Night Painting Print for Girlfriend $120
-          </p> -->
-
-      <!-- <footer>
-        <p class="shoppingListpost__text">
-          Spurs Hat for Brother $40
-        </p>
-        <p class="shoppingListpost__text">
-          Dallas Cowboy Jersey for Sister $90
-        </p>
-        <p class="shoppingListpost__text">
-          Starry Night Painting Print for Girlfriend $120
-        </p>
-      </footer> -->
-    <!-- </main>
-  </div>
-  </body>
-</html> -->
