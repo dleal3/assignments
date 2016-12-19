@@ -13,6 +13,7 @@ $(function(){
   var $body = $("body");
   var $text = $body.find("[data-js='text_input']");
   var $addButton = $body.find("data-js='submit'");
+  var $articleElement = $body.find("data-js='articles'");
 
 
 
