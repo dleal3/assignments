@@ -2,6 +2,45 @@
   box-sizing: border-box;
 }
 
+.addButton {
+  width: 13.1%;
+  height: 42px;
+  font-size: 16px;
+  display: inline-block;;
+  background-color: #7dc476;
+  color: white;
+  border: none;
+}
+
+.body {
+  margin: 0;
+}
+
+.giftInputText {
+  border: none;
+  height: 35px;
+  width: 86%;
+}
+
+.h2 {
+  display: inline-block;
+  color: grey;
+  font-family: Helvetica;
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 1%;
+  margin-left: 30%;
+  margin-top: 7%;
+}
+
+
+
+
+
+
+
+
+
 /*body {
   font-family: Helvetica;
 }
@@ -14,7 +53,7 @@ box-shadow:
 0 10px 1px -4px rgba(0,0,0,0.15),
 0 20px 0 -10px #eee,
 0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
-}
+/*}*/
 
 /*.main {
   text-align: center;
