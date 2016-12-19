@@ -12,6 +12,82 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Gift List</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <main
+            class="main">
+      <h2
+            class="h2">GIFTS TO BUY
+      </h2>
+      <form
+            class="items_form"
+            action="index.html"
+            method="post">
+        <input
+            class="giftInputText"
+            data-js="text_input"
+            name="giftInput"
+            placeholder="enter gift item here..."
+            value=""></input>
+        <input
+            class="addButton"
+            data-js="submit"
+            type="submit"
+            name="submitItemToList"
+            value="ADD"></input>
+        <div
+            class="listItems__div"
+            data-js="divElement">
+          <article
+            class="listItem"
+            data-js="articles">
+          </article>
+          <article
+            class="totalAmount">
+            <p class="p__totalTextOnly">Total</p>
+            <p class="p">$</p>
+            <p class="p__totalCost">0</p>
+          </article>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
     <title></title>
     <script src=""http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"" charset="utf-8">
     </script>
@@ -49,7 +125,7 @@
 
 
   </body>
-</html>
+</html> -->
 
 
 

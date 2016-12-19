@@ -1,31 +1,22 @@
-$(function(){
-
-  var id = 1;
-
-  $(document).ready(function(e){
-    editButton();
-    $("tbody").on("click",".cross",function(){
-      $(this).closest("tr").remove();
-    });
-
-    $("button").on("click", getInput);
-
-    $("tbody").on("click", ".box", function(){
-      $(this).closest("tr").find("span").toggleClass("checked");
-    });
-  });
-
-// triggered on enter
-$(document).on("keydown",function(e){
-  if(e.keyCode === 13) {
-    getInput();
-  }
-});
 
 
 
-// trigger delete icon when edit button is clicked
-function editButton() {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
