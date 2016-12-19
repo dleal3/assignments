@@ -1,7 +1,19 @@
 .myAlbums {
   text-align: center;
   background-color: darkgrey;
+  display: inline-block;
+  width: 610px;
+  margin-left: 330px;
   /*padding: 20px;*/
+}
+
+.albumsContainer {
+  width: 620px;
+  display: inline-block;
+  margin: 0 330px;
+  /* margin takes 4 args top, right, bottom, left
+  if only 1 arg, that's the arg for all 4
+  if 2 args, the first arg = top/bottom 2nd arg = left/right*/
 }
 
 .firstRowimages {
@@ -16,42 +28,20 @@
   height: 200px;
   display: inline;
   align-items: center;
+  margin-top: 5px;
 }
 /*.firstRow {
   display: inline;
 }*/
 
-.firstPicture{
+.Picture{
   /*border: solid black 1px;*/
   height: 250px;
   width: 200px;
+  display: inline-block;
 }
 
-.secondPicture {
-  /*border: solid black 1px;*/
-  height: 250px;
-  width: 200px;
-}
 
-.thirdPicture{
-  height: 250px;
-  width: 200px;
-}
-
-.fourthPicture {
-  height: 250px;
-  width: 200px;
-}
-
-.fifthPicture {
-  height: 250px;
-  width: 200px;
-}
-
-.sixthPicture {
-  height: 250px;
-  width: 200px;
-}
 
   .albumLink {
   display: inline-block;
