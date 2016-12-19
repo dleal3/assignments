@@ -3,3 +3,18 @@
   background-color: darkgrey;
   padding: 20px;
 }
+
+.firstRowimages {
+  width: 100px;
+  height: 100px;
+  display: inline;
+}
+
+.secondRowimages {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+/*.firstRow {
+  display: inline;
+}*/
