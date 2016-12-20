@@ -14,8 +14,32 @@
   margin-left: 330px;
 }
 
+.photo1body {
+  background: grey;
+}
 
+.photo1{
+  text-align: center;
+  display: inline-block;
+  width: 610px;
+  margin-left: 200px;
 
+}
+
+.backButton {
+  text-decoration: none;
+  border: solid black 1px;
+  max-width: 160px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  background: white;
+  float: left;
+  border-style: dashed;
+}
+.backButtonLI {
+  padding: 0;
+}
 
 /*.albumNavigation {
   float: left;
@@ -33,6 +57,13 @@
   /* margin takes 4 args top, right, bottom, left
   if only 1 arg, that's the arg for all 4
   if 2 args, the first arg = top/bottom 2nd arg = left/right*/
+}
+
+.mapImage{
+  width: 620px;
+  height: 600px;
+  display: inline-block;
+  margin: 0 330px;
 }
 
 .firstRowimages {
