@@ -14,6 +14,18 @@
   margin-left: 330px;
 }
 
+
+
+
+/*.albumNavigation {
+  float: left;
+   max-width: 160px;
+   margin: 0;
+   padding: 0;
+   border: solid black 1px;
+   display: inline-block;
+}*/
+
 .albumsContainer {
   width: 620px;
   display: inline-block;
