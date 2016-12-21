@@ -1,0 +1,135 @@
+/*Instead of writing a class for each button, write only two
+classes. One for numbers and One for special characters.*/
+
+body{
+  display: inline-block;
+  margin-left: 500px;
+  margin-top: 200px;
+  width: 400px;
+}
+
+
+.numButton {
+  background: rgb(100,178,85);
+  color: white;
+  border: none;
+  height: 70px;
+  width: 70px
+}
+
+.symbol-Button {
+  background: rgb(127,193,128);
+  border: none;
+  margin-right: -5px;
+  height: 70px;
+  width: 70px
+}
+
+.input-Button {
+  width: 210px;
+  height: 66px;
+  background: rgb(100,178,85);
+  padding-top: 4px;
+}
+
+
+
+/*Commented out my previous classes so that i could clean up my layout*/
+/*.clear-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+
+.input-area {
+  background: rgb(100,178,85);
+  width: 52px;
+  height: 10px;
+}
+
+.num7-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+
+.num8-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+
+.num9-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+
+.numForwardSlash-button {
+  background: rgb(127,193,128);
+  border-style: hidden;
+}
+
+.num4-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+
+.num5-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+.num6-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+.numX-button {
+  background: rgb(127,193,128);
+  border-style: hidden;
+}
+
+.num1-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+.num2-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+.num3-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+.numMinus-button {
+  background: rgb(127,193,128);
+  border-style: hidden;
+}
+
+.num0-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+
+.numPeriod-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+
+.numEquals-button {
+  background: rgb(100,178,85);
+  border-style: hidden;
+  color: white;
+}
+
+.numPlus-button {
+  background: rgb(127,193,128);
+  border-style: hidden;
+}*/
