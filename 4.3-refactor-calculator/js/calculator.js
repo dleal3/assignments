@@ -1,5 +1,12 @@
 var $ = require("jquery");
 $(function(){
+
+var $body = $("body");
+
+var $numButtonElement = $body.find("[data-js='numButton']")
+
+var $
+
   // Everything in here will be able to see content / after it loads
 var $cButtonElement = $("[data-js='cButton']");
 var $outputElement = $("[data-js='inputAreaButton']");
@@ -120,7 +127,6 @@ var $outputElement = $("[data-js='inputAreaButton']");
 $plusButtonElement.on("click", function(){
   $outputElement.textContent += "+";
 });
-console.log("this is a textlskfjlsdfj;afldj");
 
 //
 });
