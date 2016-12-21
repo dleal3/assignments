@@ -44,45 +44,45 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	$(function(){
-	  // Everything in here will be able to see content / after it loads
-	var $cButtonElement = $("[data-js='cButton']");
-	var $outputElement = $("[data-js='inputAreaButton']");
-	$cButtonElement.on("click", function(){
-	    $outputElement.textContent = "";
+	document.addEventListener("DOMContentLoaded", function(){
+
+	var cButtonElement = document.querySelector("[data-js='cButton']");
+	var outputElement = document.querySelector("[data-js='inputAreaButton']");
+	cButtonElement.addEventListener("click", function(){
+	    outputElement.textContent = "";
 	});
 	// wasn't sure if I needed a var element for the input area that shows
 	// var inputAreaButtonElement = document.querySelector("[data-js='inputAreaButton']")
 	// var outputElement = document.querySelector("[data-js='inputAreaButton']")
 
-	var $sevenButtonElement = $("[data-js='sevenButton']");
-	var $outputElement = $("[data-js='inputAreaButton']");
-	$sevenButtonElement.on("click", function(){
-	  $outputElement.textContent += 7;
+	var sevenButtonElement = document.querySelector("[data-js='sevenButton']");
+	var outputElement = document.querySelector("[data-js='inputAreaButton']");
+	sevenButtonElement.addEventListener("click", function(){
+	  outputElement.textContent += 7;
 	});
 
-	var $eightButtonElement = $("[data-js='eightButton']");
-	var $outputElement = $("[data-js='inputAreaButton']");
-	$eightButtonElement.on("click", function(){
-	  $outputElement.textContent += 8;
+	var eightButtonElement = document.querySelector("[data-js='eightButton']");
+	var outputElement = document.querySelector("[data-js='inputAreaButton']");
+	eightButtonElement.addEventListener("click", function(){
+	  outputElement.textContent += 8;
 	});
 
-	var $nineButtonElement = $("[data-js='nineButton']");
-	var $outputElement = $("[data-js='inputAreaButton']");
-	$nineButtonElement.on("click", function(){
-	  $outputElement.textContent += 9;
+	var nineButtonElement = document.querySelector("[data-js='nineButton']");
+	var outputElement = document.querySelector("[data-js='inputAreaButton']");
+	nineButtonElement.addEventListener("click", function(){
+	  outputElement.textContent += 9;
 	});
 
-	var $divideButtonElement = $("[data-js='divideButton']");
-	var $outputElement = $("[data-js='inputAreaButton']");
-	$divideButtonElement.on("click", function(){
-	  $outputElement.textContent += "/"
+	var divideButtonElement = document.querySelector("[data-js='divideButton']");
+	var outputElement = document.querySelector("[data-js='inputAreaButton']");
+	divideButtonElement.addEventListener("click", function(){
+	  outputElement.textContent += "/"
 	})
 
-	var $fourButtonElement = $("[data-js='fourButton']");
-	var $outputElement = $("[data-js='inputAreaButton']");
-	$fourButtonElement.on("click", function(){
-	  $outputElement.textContent += 4;
+	var fourButtonElement = document.querySelector("[data-js='fourButton']");
+	var outputElement = document.querySelector("[data-js='inputAreaButton']");
+	fourButtonElement.addEventListener("click", function(){
+	  outputElement.textContent += 4;
 	});
 	var fiveButtonElement = document.querySelector("[data-js='fiveButton']");
 	var outputElement = document.querySelector("[data-js='inputAreaButton']");
