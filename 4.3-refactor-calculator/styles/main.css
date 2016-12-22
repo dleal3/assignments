@@ -24,7 +24,7 @@ body{
   width: 70px
 }
 
-.symbol-Button {
+.symbolButton {
   background: rgb(127,193,128);
   border: none;
   margin-right: -5px;
@@ -32,7 +32,7 @@ body{
   width: 70px
 }
 
-.input-Button {
+.output {
   width: 210px;
   height: 66px;
   background: rgb(100,178,85);
