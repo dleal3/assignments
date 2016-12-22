@@ -1,22 +1,35 @@
+// [x] create var that will require jquery
+// [x] create an anonomous function
+// [x] make a var for the body
+// [x] need to create var the numberButtonElement
+// [x] need to create var for symbolButtonElement
+// [x] create var for outputElement
 var $ = require("jquery");
 $(function(){
-
 var $body = $("body");
-
-var $numButtonElement = $body.find("[data-js='numButton']");
-
-var $symbolButtonElements = $body.find("[data-js='symbolButton']");
-
+var $numberButtonElement = $body.find("[data-js='numberButton']");
+var $symbolButtonElement = $body.find("[data-js='symbolButton']");
 var $outputElement = $body.find("[data-js='output']");
 
-
-$numButtonElement.on("click", function(e){
-  var $clickednumButtonElement = $(this);
+$numberButtonElement.on("click", function(e){
+  var $clickednumberButtonElement = $(this);
   var currentOutputString = $outputElement.text();
-  var number = $clickednumButtonElement.text();
+  var number = $clickednumberButtonElement.text();
   $outputElement.text(currentOutputString + number);
 });
 
+  $symbolButtonElement.on("click", function(e){
+    var $clickedSymbolButtonElement = $(this);
+    var currentOutputString = $outputElement.text();
+    var number = $clickedSymbolButtonElement.text();
+    $outputElement.text(currentOutputString + number);
+  });
+
+  $outputElement.on("click", function(e){
+    var $clickedSymbolButtonElement = $(this);
+    var currentOutputString = $outputElement.text();
+    var number = $clickedSymbolButtonElement.text();
+  });
   // Everything in here will be able to see content / after it loads
 // var $clearButtonElement = $("[data-js='clearButton']");
 // var $outputElement = $("[data-js='output']");
