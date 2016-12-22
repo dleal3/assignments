@@ -25,11 +25,11 @@ $numberButtonElement.on("click", function(e){
     $outputElement.text(currentOutputString + number);
   });
 
-  $outputElement.on("click", function(e){
-    var $clickedSymbolButtonElement = $(this);
-    var currentOutputString = $outputElement.text();
-    var number = $clickedSymbolButtonElement.text();
-  });
+  // $outputElement.on("click", function(e){
+  //   var $clickedoutputElement = $(this);
+  //   var currentOutputString = $outputElement.text();
+  //   var number = $clickedSymbolButtonElement.text();
+  // });
   // Everything in here will be able to see content / after it loads
 // var $clearButtonElement = $("[data-js='clearButton']");
 // var $outputElement = $("[data-js='output']");
