@@ -1,0 +1,16 @@
+.table {
+  background: red;
+  border-collapse: collapse;
+}
+
+
+.square {
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+}
+
+.square:nth-child(2){
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+}
