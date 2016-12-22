@@ -42,3 +42,13 @@ body {
 .square--lost::before {
   opacity: 0.5;
 }
+
+.table{
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.table__row:nth-child(2){
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
