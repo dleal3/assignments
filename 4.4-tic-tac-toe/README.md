@@ -7,7 +7,7 @@ Style Initial State
 [x] Add 100px height and width to every square
 [x]Background color
 [x]Second table row needs top and bottom border: 4px white
-[]Second table data inside of every row needs left and right border: 4px white
+[x]Second table data inside of every row needs left and right border: 4px white
 
 Style Playing State
 []Style "X move" in square

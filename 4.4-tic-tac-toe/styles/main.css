@@ -1,8 +1,7 @@
-.table {
-  background: red;
-  border-collapse: collapse;
+body {
+  margin: 0;
+  font-family: helvetica;
 }
-
 
 .square {
   background-color: blue;
@@ -13,4 +12,15 @@
 .square:nth-child(2){
   border-left: 4px solid white;
   border-right: 4px solid white;
+}
+
+.square--x::before,
+.square--o::before {
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: lighter;
+  width: 100px;
+  color: white;
+  display: block;
+  text-align: center;
 }
