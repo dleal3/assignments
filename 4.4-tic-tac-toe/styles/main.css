@@ -24,3 +24,11 @@ body {
   display: block;
   text-align: center;
 }
+
+.square--o::before {
+  content: "O";
+}
+
+.square--x::before {
+  content: "X";
+}
