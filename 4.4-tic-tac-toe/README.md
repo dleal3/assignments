@@ -14,5 +14,5 @@ Style Playing State
 [x]Style "O move" in square
 
 Style Finished State
-[]Style winning moves: larger font, red
-[]Style losing moves: opacity: 50%;
+[x]Style winning moves: larger font, red
+[x]Style losing moves: opacity: 50%;

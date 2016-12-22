@@ -32,3 +32,13 @@ body {
 .square--x::before {
   content: "X";
 }
+
+.square--won::before {
+  font-weight: bold;
+  font-size: 120px;
+  color: red;
+}
+
+.square--lost::before {
+  opacity: 0.5;
+}
