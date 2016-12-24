@@ -82,6 +82,10 @@
 
 
 
+	// need to make a jquery function for the ButtonElement which will have a click listener
+	// create a var for when button is clicked (clickedButtonElement) and set it to $(this)
+	// create a var for number that will display the clicked button
+	// set the jquery outputElement
 	  $ButtonElement.on("click", function(e){
 
 	    var $clickedButtonElement = $(this);
@@ -89,7 +93,7 @@
 	    var currentOutputString = $outputElement.text();
 
 	    var number = $clickedButtonElement.text();
-
+	// we are concatinating the currentOutputString and the number to show in the output
 	    $outputElement.text(currentOutputString + number);
 	  });
 
