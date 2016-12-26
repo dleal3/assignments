@@ -22,6 +22,11 @@
   display: -webkit-box;
 }
 
+.SHOES {
+  text-align: center;
+  margin-right: 244px;
+}
+
 .firstRow {
   display: inline-flex;
   margin-left: 250px;
@@ -52,6 +57,18 @@
 
 .ul {
 
+}
+
+.photoHeader {
+  text-align: center;
+}
+
+.modal {
+  text-align: center;
+}
+
+.back{
+  display: -webkit-box;
 }
 /*
 .modal {
