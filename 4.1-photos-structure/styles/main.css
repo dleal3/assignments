@@ -6,6 +6,42 @@
   margin: -5px;
 }
 
+.albumImg {
+  height: 150px;
+  width: 160px;
+  margin-bottom: -5px;
+}
+
+.button1 {
+  background-color: white;
+  border: none;
+}
+
+.button2 {
+  background-color: white;
+  border: none;
+}
+
+.button3 {
+  background-color: white;
+  border: none;
+}
+
+.button4 {
+  background-color: white;
+  border: none;
+}
+
+.button5 {
+  background-color: white;
+  border: none;
+}
+
+.button6{
+  background-color: white;
+  border: none;
+}
+
 .albumHeading {
   text-align: center;
 }

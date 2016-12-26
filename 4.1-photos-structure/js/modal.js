@@ -4,17 +4,17 @@ $(function(){
   var $body = $("body");
   var $modal = $body.find("[data-js='modal1']");
   var $backButton = $body.find("[data-js='backButton']");
-  var $Jordan1Button = $body.find("[data-js='Jordan1Button']");
+  var $button1 = $body.find("[data-js='button1']");
 
-  $Jordan1Button.on("click", function(e){
+  $button1.on("click", function(e){
     $modal.removeClass("hidden");
-    var $photo1 = $("<img>")
+    var $albumImg1 = $("<img>")
     .attr({
       alt:"Jordan 1"
-      class: "image",
+      class: "Jordan1Button",
       src: "styles/Jordan_1.jpg"
     });
-    var imgModal1 = $modal.append($photo1);
+    var imgModal1 = $modal.append($albumImg1);
   });
   $backButton.on("click",function(e){
     $modal.addClass("hidden")
