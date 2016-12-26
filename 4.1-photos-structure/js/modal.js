@@ -16,13 +16,22 @@ var $photo5 = $body.find("[data-js='photo5']");
 var $photo6 = $body.find("[data-js='photo6']");
 var $modalImage = $body.find("[data-js='modalImage']")
 
-  // Add a click event listener on photo1 element
-$photo1.on("click", function(e){
-  // Inside of click event open modal
-  $modal.removeClass("hide");
-  $albumPage.addClass("hide");
+   // Add a click event listener on photo1 element
+  $photo1.on("click", function(e){
+    // Inside of click event open modal
+    $modal.removeClass("hide");
+    $albumPage.addClass("hide");
+  });
+  // This click event for the backbutton closes the modal and returns to album page
+  $backButton.on("click", function(e){
+    $modal.addClass("hide");
+    $albumPage.addClass("hide");
   });
 
+  $photo2.on("click", function(e){
+    $modal.addClass("hide");
+    $albumPage.addClass("hide");
+  })
 });
 
 //   var $this = $("this");
