@@ -1,22 +1,31 @@
-var $ = require ("jquery");
-$(function(){
-
-  var $body = $("body");
-
-  var modal = document.getElementByID('myModal');
-
-  var btn = document.getElementByID('myBtn');
-
-  var JordanOne = document.getElementByID('myJordan');
-
-
-  btn.onclick = function(){
-    modal.style.display = "block";
-  }
-
-  JordanOne.onclick = function(){
-    modal.style.display = "none";
-  }
+var $ = require("jquqery");
+var album = require("./album");
+var modal = require("./modal");
+// var $ = require ("jquery");
+// $(function(){
+//
+//   var $body = $("body");
+//
+//   var modal = document.getElementByID('myModal');
+//
+//   var btn = document.getElementByID('myBtn');
+//
+//   var span = document.getElementByClassName("close")[0];
+//
+//   btn.onclick = function() {
+//     modal.style.display = "block";
+//   };
+//
+//   span.onclick = function(){
+//     modal.style.display = "none";
+//   };
+//
+//   window.onclick = function(event){
+//     if (event.target == modal){
+//       modal.style.display =
+//       "none";
+//     }
+//   }
   // var $photo1 = $body.find("[data-js='photo1']");
   // var $photo2 = $body.find("[data-js='photo2']");
   // var $photo3 = $body.find("[data-js='photo3']");
@@ -36,7 +45,7 @@ $(function(){
   //   $modalElement.addClass("hidden");
   // });
 
-});
+// });
   // var $mainElement = $body.find("[data-js='main']");
   // var $imgElement = $body.find("[data-js='image']");
   //
