@@ -15,16 +15,18 @@
     <h1 class="albumHeading">Albums</h1>
 
     <main class="main">
-      <aside class="aside">
-        <ul class="ul">
-          <button class="buttons">Album 1</button>
-          <button class="buttons">Album 2</button>
-          <button class="buttons">Album 3</button>
-          <button class="buttons">Album 4</button>
-          <button class="buttons">Album 5</button>
-          <button class="buttons">Album 6</button>
-        </ul>
-      </aside>
+      <div class="" data-js="albumPage">
+        <aside class="aside">
+          <ul class="ul">
+            <button class="buttons">Album 1</button>
+            <button class="buttons">Album 2</button>
+            <button class="buttons">Album 3</button>
+            <button class="buttons">Album 4</button>
+            <button class="buttons">Album 5</button>
+            <button class="buttons">Album 6</button>
+          </ul>
+        </aside>
+      </div>
 
       <section class="firstRow">
         <article class="album">
@@ -52,16 +54,7 @@
           </p>
         </article>
       </section>
-      <!-- MODAL Picture -->
-      <section class="modal" data-js="modal1">
-        <h1 class="photoHeader">Photo 1</h1>
-        <button data-js="backButton"
-                class="backButton"
-                type="button"
-                name="button">Back to Album</button>
-        <img src="styles/Jordan_1.jpg" alt="Jordan 1" />
-      </section>
-      <!-- Closes Model Pic -->
+
       <section class="secondRow">
         <article class="album">
           <button class="button4">
@@ -89,6 +82,15 @@
         </article>
       </section>
     </main>
-
+    <!-- MODAL Picture -->
+    <section class="modal" data-js="modal1">
+      <h1 class="photoHeader">Photo 1</h1>
+      <button data-js="backButton"
+              class="backButton"
+              type="button"
+              name="button">Back to Album</button>
+      <img src="styles/Jordan_1.jpg" alt="Jordan 1" />
+    </section>
+    <!-- Closes Model Pic -->
   </body>
 </html>
