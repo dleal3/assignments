@@ -1,22 +1,23 @@
-body {
+/*body {
   width: 400px;
   height: 400px;
+}*/
+.image {
+  height: 150px;
+  width: 150px;
 }
 
-
+/*
 .modal {
 
 }
 
-
-
-.myAlbums {
+.myShoes {
   text-align: center;
   background-color: darkgrey;
   display: inline-block;
   width: 610px;
   margin-left: 330px;
-  /*padding: 20px;*/
 }
 
 .Album3 {
@@ -54,22 +55,11 @@ body {
   padding: 0;
 }
 
-/*.albumNavigation {
-  float: left;
-   max-width: 160px;
-   margin: 0;
-   padding: 0;
-   border: solid black 1px;
-   display: inline-block;
-}*/
 
 .albumsContainer {
   width: 620px;
   display: inline-block;
   margin: 0 330px;
-  /* margin takes 4 args top, right, bottom, left
-  if only 1 arg, that's the arg for all 4
-  if 2 args, the first arg = top/bottom 2nd arg = left/right*/
 }
 
 .mapImage{
@@ -93,12 +83,9 @@ body {
   align-items: center;
   margin-top: 5px;
 }
-/*.firstRow {
-  display: inline;
-}*/
+
 
 .Picture{
-  /*border: solid black 1px;*/
   height: 250px;
   width: 200px;
   display: inline-block;
@@ -122,4 +109,4 @@ body {
   margin-right: 0;
   background: grey;
   height: 300px;
-}
+}*/
