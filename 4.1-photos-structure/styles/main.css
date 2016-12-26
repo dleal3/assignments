@@ -1,14 +1,58 @@
-/*body {
-  width: 400px;
-  height: 400px;
-}*/
+
 .image {
   height: 150px;
   width: 150px;
+  border: solid black 5px;
+  margin: -5px;
 }
 
+.albumHeading {
+  text-align: center;
+}
 
+.album {
+  width: 188px;
+  margin-right: 0;
+  padding: 0;
+}
 
+.main{
+  text-align: center;
+  width: 100px;
+  display: -webkit-box;
+}
+
+.firstRow {
+  display: inline-flex;
+  margin-left: 250px;
+}
+
+.secondRow {
+  display: -webkit-inline-box;
+  margin-left: 250px;
+}
+
+.albums {
+
+}
+
+.shoeName {
+  border: solid black 5px;
+  margin: auto;
+  width: 150px;
+}
+
+.buttons {
+  display: list-item;
+  margin-bottom: 47px;
+}
+.aside {
+
+}
+
+.ul {
+
+}
 /*
 .modal {
 
@@ -87,7 +131,7 @@
 }*/
 
 
-.Picture{
+/*.Picture{
   height: 250px;
   width: 200px;
   display: inline-block;
@@ -111,4 +155,4 @@
   margin-right: 0;
   background: grey;
   height: 300px;
-}*/
+}*/*/
