@@ -99,7 +99,7 @@
   text-align: center;
 }
 
-.modal {
+.hide {
   display: none;
   text-align: center;
   position: absolute;
@@ -108,7 +108,7 @@
   width: 100%;
   Background-color: rgba(0,0,0,0.7)
 }
-.JordanModal {
+.showImage {
   height: 80%;
   width: 80%;
 }
