@@ -100,6 +100,7 @@
 }
 
 .modal {
+  display: none;
   text-align: center;
   position: absolute;
   bottom: 0px;
@@ -108,7 +109,12 @@
   Background-color: rgba(0,0,0,0.7)
 }
 .JordanModal {
+  height: 80%;
+  width: 80%;
+}
 
+.backButton {
+  display: list-item;
 }
 
 .back{
