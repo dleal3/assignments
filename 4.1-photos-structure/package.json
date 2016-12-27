@@ -4,7 +4,8 @@
   "description": "SETUP - [x] - make a checklist - [x] - install webpack --save-dev - [x] - install webpack -g - [x] - touch webpack.config.js - [x] - reference lectures configuration and copy into ours - [x] - webpack --watch",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "jquery": "^3.1.1"
   },
   "devDependencies": {
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "webpack-cli": "^1.0.0"
   }
 }

@@ -81,6 +81,8 @@
   border: solid black 5px;
   margin: auto;
   width: 150px;
+  background-color: black;
+  color: white;
 }
 
 .buttons {
@@ -101,7 +103,6 @@
 
 .hide {
   display: none;
-  text-align: center;
   position: absolute;
   bottom: 0px;
   height: 100%;
@@ -110,7 +111,8 @@
 }
 .showImage {
   height: 80%;
-  width: 80%;
+  width: 90%;
+  margin-left: 70px;
 }
 
 .backButton {

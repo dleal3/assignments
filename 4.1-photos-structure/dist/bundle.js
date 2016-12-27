@@ -44,74 +44,12 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(1);
-	(function webpackMissingModule() { throw new Error("Cannot find module \"bundle.js\""); }());
+	var $ = __webpack_require__(1);
+	var modal = __webpack_require__(2);
 
 
 /***/ },
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $ = __webpack_require__ (2);
-	$(function(){
-
-	  var $body = $("body");
-
-	  var modal = document.getElementByID('myModal');
-
-	  var btn = document.getElementByID('myBtn');
-
-	  var JordanOne = document.getElementByID('myJordan');
-
-
-	  btn.onclick = function(){
-	    modal.style.display = "block";
-	  }
-
-	  JordanOne.onclick = function(){
-	    modal.style.display = "none";
-	  }
-	  // var $photo1 = $body.find("[data-js='photo1']");
-	  // var $photo2 = $body.find("[data-js='photo2']");
-	  // var $photo3 = $body.find("[data-js='photo3']");
-	  // var $photo4 = $body.find("[data-js='photo4']");
-	  // var $photo5 = $body.find("[data-js='photo5']");
-	  // var $photo6 = $body.find("[data-js='photo6']");
-	  //
-	  // var $backButtonElement = ("[data-js='backButton']");
-	  //
-	  // var #modalElement = ("[data-js='modal']");
-	  //
-	  // $photo1.on("click", function(e){
-	  //   $modalElement.removeClass("hidden");
-	  // });
-	  //
-	  // $backButtonElement.on("click", function(e){
-	  //   $modalElement.addClass("hidden");
-	  // });
-
-	});
-	  // var $mainElement = $body.find("[data-js='main']");
-	  // var $imgElement = $body.find("[data-js='image']");
-	  //
-	  // var $backButton = $body.find("[data-js='']");
-	  // var $albumHeading2 = $body.find("[data-js='']");
-	  //
-	  //   $imgElement.on("click", function(e){
-	  //     $albumHeading2.addClass("");
-	  //     $mainElement.addClass("");
-	  //     $modalClose.removeClass("");
-	  // });
-	  //
-	  //   $backButton.on("click", function(e){
-	  //     $albumHeading2.removeClass("");
-	  //     $mainElement.removeClass("");
-	  //     $modalClose.addClass("");
-	  // });
-
-
-/***/ },
-/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10334,6 +10272,69 @@
 
 	return jQuery;
 	} );
+
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// [x] make jquery factory call
+	var $ = __webpack_require__ (1);
+	// [x] make Jquery dom ready
+	$(function(){
+	//[x] Add data-js to html
+	//[x] Create var referencing each data-js attribute
+	var $body = $("body");
+	var $modal = $body.find("[data-js='modal1']");
+	var $albumPage = $body.find("[data-js='albumPage']");
+	var $backButton = $body.find("[data-js='backButton']");
+	var $photo1 = $body.find("[data-js='photo1']");
+	var $photo2 = $body.find("[data-js='photo2']");
+	var $photo3 = $body.find("[data-js='photo3']");
+	var $photo4 = $body.find("[data-js='photo4']");
+	var $photo5 = $body.find("[data-js='photo5']");
+	var $photo6 = $body.find("[data-js='photo6']");
+
+	   // Add a click event listener on photo1 element
+	  $photo1.on("click", function(e){
+	    // Inside of click event open modal
+	    $modal.removeClass("hide");
+	    $albumPage.addClass("hide");
+	  });
+
+	  // This click event for the backbutton closes the modal and returns to album page
+	  $backButton.on("click", function(e){
+	    $modal.addClass("hide");
+	    $albumPage.addClass("hide");
+	      });
+	  });
+
+
+
+	  // $photo2.on("click", function(e){
+	  //   $modal.addClass("hide");
+	  //   $albumPage.addClass("hide");
+	  // });
+	  //
+	  // $photo3.on("click", function(e){
+	  //   $modal.addClass("hide");
+	  //   $albumPage.addClass("hide");
+	  // });
+	  //
+	  // $photo4.on("click", function(e){
+	  //   $modal.addClass("hide");
+	  //   $albumPage.addClass("hide");
+	  // });
+	  //
+	  // $photo5.on("click", function(e){
+	  //   $modal.addClass("hide");
+	  //   $albumPage.addClass("hide");
+	  // });
+	  //
+	  // $photo6.on("click", function(e){
+	  //   $modal.addClass("hide");
+	  //   $albumPage.addClass("hide");
+	  // });
 
 
 /***/ }
