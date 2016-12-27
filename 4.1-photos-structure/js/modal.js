@@ -19,6 +19,8 @@ var $modalImage = $body.find("[data-js='modalImage']");
 
    // Add a click event listener on photo1 element
   $photo1.on("click", function(e){
+    // Created a var for ClickedImageSrc and assigned it to return current clicked element and the .attr returns value of
+    // whatever attribute we pass it / in this case we want to return the value of "src"
     var $clickedImageSrc = $(e.currentTarget).attr("src");
     // Inside of click event open modal
     $modal.removeClass("hide");
