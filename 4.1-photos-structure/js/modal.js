@@ -26,13 +26,33 @@ var $modalImage = $body.find("[data-js='modalImage']")
   $backButton.on("click", function(e){
     $modal.addClass("hide");
     $albumPage.addClass("hide");
+      });
   });
 
-  $photo2.on("click", function(e){
-    $modal.addClass("hide");
-    $albumPage.addClass("hide");
-  })
-});
+  // $photo2.on("click", function(e){
+  //   $modal.addClass("hide");
+  //   $albumPage.addClass("hide");
+  // });
+  //
+  // $photo3.on("click", function(e){
+  //   $modal.addClass("hide");
+  //   $albumPage.addClass("hide");
+  // });
+  //
+  // $photo4.on("click", function(e){
+  //   $modal.addClass("hide");
+  //   $albumPage.addClass("hide");
+  // });
+  //
+  // $photo5.on("click", function(e){
+  //   $modal.addClass("hide");
+  //   $albumPage.addClass("hide");
+  // });
+  //
+  // $photo6.on("click", function(e){
+  //   $modal.addClass("hide");
+  //   $albumPage.addClass("hide");
+  // });
 
 //   var $this = $("this");
 //   var $body = $("body");
