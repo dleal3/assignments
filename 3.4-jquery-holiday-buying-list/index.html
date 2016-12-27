@@ -1,8 +1,3 @@
-
-<!--[x] Outside of Form create a new 'Section' -->
-<!--[x]  Create an article inside of section-->
-<!--[x]  We need a check button for this article-->
-<!--[x] We need a header for what we will use the check button for -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,15 +11,16 @@
     </script>
     <script src="js.main.js" charset="utf-8"></script>
   </head>
-  <body class="body"> <!--need to add class -->
+  <body class="body" data-js="body"> <!--need to add class -->
     <!--[x] Create a main section inside of body  -->
     <!--[x] Create H2 inside of main for 'Gifts to Buy heading' -->
     <!--[x] Create a Form inside of main underneath the H1 -->
     <!--[x] Create an Input section inside form for the text area -->
-    <!--[] Create a second input for the ADD 'button' -->
-    <!--[] Close the form -->
-    <main class="main" > <!--need to add class -->
-      <h2 class="h2" >GIFTS TO BUY</h2> <!--need to add class -->
+
+    <!-- Calling this a toDO list instead of gifts to buy list -->
+    <h2 class="h2" data-js="h2" >GIFTS TO BUY</h2> <!--need to add class -->
+
+    <main class="body" data-js="body"> <!--need to add class -->
       <form class="items__form" action="index.html" method="post"> <!--added form class -->
       <input
         class="giftInputText"
@@ -33,6 +29,7 @@
         name="giftInput"
         placeholder="  enter gift here"
         value=""></input>
+        <!--[x] Create a second input for the ADD 'button' -->
         <input
           class="addButton"
           data-js="submit"
