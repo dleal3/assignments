@@ -1,11 +1,4 @@
 
-<!--[x] Create a main section inside of body  -->
-<!--[x] Create H1 inside of main for 'Gifts to Buy heading' -->
-<!--[x] Create a Form inside of main underneath the H1 -->
-<!--[x] Create an Input section inside form for the text area -->
-<!--[x] Create a second input for the ADD 'button' -->
-<!--[x] Close the form -->
-
 <!--[x] Outside of Form create a new 'Section' -->
 <!--[x]  Create an article inside of section-->
 <!--[x]  We need a check button for this article-->
@@ -16,49 +9,46 @@
     <meta charset="utf-8">
     <title>3.4 Gift List</title>
     <link rel="stylesheet" href="styles/main.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-    <script src="js/main.js" charset="utf-8"></script>
+    <script
+         src="https://code.jquery.com/jquery-3.1.1.js"
+         integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+         crossorigin="anonymous">
+    </script>
+    <script src="js.main.js" charset="utf-8"></script>
   </head>
-  <body>
-    <main class="main">
-      <h1 class="h1">GIFTS TO BUY</h1>
-      <form class="form" action="index.html" method="post">
-        <input data-js="text_input" class="enterGift" type="text" name="enterGift" value="" placeholder="type the gift you will regret buying here...."> <!-- need to data-js="" -->
-        <input data-js"submit" class="addButton" type="submit" name="submitItemEntered" value="ADD"> <!-- need to data-js="" -->
-      <!-- ******************************* start new section with an article for items listed ************************** -->
-      <section data-js="section" class="listedGifts"> <!-- Thinking about using a DIV as a container -->
-        <article data-js="articles" class="giftItem"> <!-- need to data-js="" -->
-        <button class="checkButton"type="button" name="button"></button> <!-- need to data-js="" -->
-        <p class="Item">Dallas Cowboys Jersey</p> <!-- need to data-js="" -->
-        <p class="Price">$ 90</p> <!-- need to data-js="" -->
-        </article>
-        <article class="totalAmount">
-        <p class="totalText">Total</p>
-        <p class="totalCost" data-js="total">0</p>
-        <!-- <p class="p">$</p>
-        <p class="p__totalCost"        data-js="total">0</p> -->
-        </article>
-      </section>
-     </form>
+  <body class="body"> <!--need to add class -->
+    <!--[x] Create a main section inside of body  -->
+    <!--[x] Create H2 inside of main for 'Gifts to Buy heading' -->
+    <!--[x] Create a Form inside of main underneath the H1 -->
+    <!--[x] Create an Input section inside form for the text area -->
+    <!--[] Create a second input for the ADD 'button' -->
+    <!--[] Close the form -->
+    <main class="main" > <!--need to add class -->
+      <h2 class="h2" >GIFTS TO BUY</h2> <!--need to add class -->
+      <form class="items__form" action="index.html" method="post"> <!--added form class -->
+      <input
+        class="giftInputText"
+        data-js="text_input"
+        type="text"
+        name="giftInput"
+        placeholder="  enter gift here"
+        value=""></input>
+        <input
+          class="addButton"
+          data-js="submit"
+          type="submit"
+          name="submitItemToList"
+          value="ADD"></input>
+        <div class="listItems_div" data-js="divElement">
+          <article class="listItem" data-js="articles">
+          </article>
+          <article class="totalAmount">
+            <p class="p__totalTextOnly">Total</p>
+            <p class="p">$</p>
+            <p class="p__totalCost">0</p>
+          </article>
+        </div>
+      </form>
     </main>
   </body>
 </html>
-
-                          <!-- <section class="item_section"
-                                   data-js="item_section">
-                            <article class="item_article1"
-                                     data-js="item_article">
-                              <button class="check_button"
-                                      data-js="checkButton">
-                              </button>
-                              <h2 class="h2_item"
-                                  data-js="giftItem">Cowboys Jersey</h2>
-                              <h2 class="h2_price"
-                                  data-js="price">$25</h2>
-                            </article>
-                          </section>
-
-                          </main>
-
-                        </body>
-                      </html> -->
