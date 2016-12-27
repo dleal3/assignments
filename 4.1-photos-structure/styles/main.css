@@ -101,13 +101,17 @@
   text-align: center;
 }
 
-.hide {
-  display: none;
+.showModal{
+  display: block;
   position: absolute;
   bottom: 0px;
   height: 100%;
   width: 100%;
-  Background-color: rgba(0,0,0,0.7)
+  background-color: rgba(0,0,0,0.7)
+}
+
+.hide {
+  display: none;
 }
 .showImage {
   height: 80%;
