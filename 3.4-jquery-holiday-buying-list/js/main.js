@@ -14,7 +14,7 @@ $(function(){
   var $text = $body.find("[data-js='text_input']");
   var $addButton = $body.find("[data-js='submit']");
   var $articleElement = $body.find("[data-js='articles']");
-  var $sectionElement = $body.find("[data-js='section']");
+  var $divElement = $body.find("[data-js='divElement']");
   var totalElement = $body.find("[data-js='total']");
   $addButton.on("click", function(e){
     e.preventDefault();

@@ -42,3 +42,53 @@
   height: 42px;
   width: 13.1%;
 }
+
+.listItems_div {
+  margin-top: -2px;
+}
+
+.listItem {
+  border-top: solid 1px gainsboro;
+  font-family: helvetica;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  margin-top: : 0px;
+  margin-bottom: 5px;
+}
+
+.totalAmount {
+  background-color: #F5F5F5;
+  border-top: solid 1px gainsboro;
+  color: red;
+  font-family: helvetica;
+  font-size: 20px;
+  height: 40px;
+  padding-right: 10px;
+  padding-top: 7px;
+  text-align: right;
+  -webkit-apperance; initial;
+}
+.totalTextOnly {
+  color: black;
+  display: inline-block;
+  font-family: helvetica;
+  font-size: 20px;
+  height: 40px;
+  margin-left: 432px;
+  /*float: left;*/
+  -webkit-appearance: initial;
+}
+
+.p {
+  color: black;
+  display: inline-block;
+  margin: 0;
+  margin-right: -4px;
+}
+
+.p__totalCost {
+  color: black;
+  display: inline-block;
+  margin: 0;
+}
