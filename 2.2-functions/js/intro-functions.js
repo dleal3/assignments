@@ -74,18 +74,18 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
 // [x]return true if it is a vowelsArray
 // []xfalse if it is a consonant
 // [x] have to list vowelsArray
-function isVowel(char){
-  var vowelsArray = [
+
     // any time we're going to have a collection of things we will need to place them inside an array[]
-    "a","e","i","o","u",
-    "A", "E", "I", "O", "U"
+function isVowel(char){
+  var vowelsArray = [ "a","e","i","o","u","A", "E", "I", "O", "U"
   ];
-  // indexof always needs an array of string to refer to a string
-  if(vowelsArray.indexof(char) === -1){
-    return false;
-  }else{
-    return true;
+  // CREATE A LOOP TO GO THROUGH VOWELS
+  for (var i = 0, i < vowels.length; i++){
+    if (char === vowels[i]) {
+      return true;
+    }
   }
+  return false;
 }
 
 console.assert(isVowel(0) === false);
@@ -108,23 +108,7 @@ console.assert(isVowel("E") === true);
 
 
 function rovarspraket(text){
-  var vowelsArray = [
-    "a","e","i","o","u",
-    "A", "E", "I", "O", "U"
-  ];
-  for(var i = 0; i < text.length; i++){
-    var currentLetter = vowelsArray[i];
 
-    if(vowelsArray.indexof(char) === -1){
-      var consonant = char;
-      var doubledText = "o" + consonant;
-
-      text.splice(i, 0, doubledText );
-    }
-
-  }
-  return text;
-}
 
 console.assert(rovarspraket("a") === "a")
 console.assert(rovarspraket("b") === "bob")
