@@ -1,3 +1,5 @@
+/* FOR THIS PROJECT I STARTED FROM SCRATCH AND USED DAVIDS CODE AS REFERENCE*/
+
 * {
   box-sizing: border-box;
 }
@@ -25,6 +27,7 @@
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
+  height: auto;
 }
 
 .giftInputText {
