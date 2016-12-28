@@ -1,10 +1,8 @@
+var myObject = {
+  superPower: "som text",
+  anotherProperty: "something",
 
-// // HAVE NO CLUE WHAT THIS AREA IS FOR
-// var myObject = {
-//   superPower: "som text",
-//   anotherProperty: "something",
-//
-// };
+};
 
 /**
  * PART 0
@@ -108,8 +106,21 @@ console.assert(isVowel("E") === true);
 
 
 function rovarspraket(text){
+  textAsString = text.toString();
+  if(textAsString === "0"){
+    return textAsString;
+  }
 
-
+  var textArray = textAsString.split("");
+  for(var i = 0; 1 < textArray.length; i++){
+    var currentLetter = textArray[i];
+    if(!isVowel(currentLetter)){
+      var doubleText = currentLetter + "o" + currentLetter;
+      textArray.splice(i, 1, doubleText)
+    }
+  }
+  return textArray.join("");
+}
 console.assert(rovarspraket("a") === "a")
 console.assert(rovarspraket("b") === "bob")
 console.assert(rovarspraket("cat") === "cocatot")
@@ -125,10 +136,11 @@ console.assert(rovarspraket(0) === "0")
 //  * string "books".
 //  */
 //
-// function reverse(str){
-//   // var not sure what the var would be named
-// }
-//
+function reverse(str){
+  return str.split('').reverse().join('');
+}
+console.log(reverse);
+
 // console.assert(reverse("books") === "skoob")
 // console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
 //
@@ -141,10 +153,24 @@ console.assert(rovarspraket(0) === "0")
 //  * i.e. findLongestWord("book dogs") should return "book"
 //  */
 //
-// function findLongestWord(sentence){
-//   // var not sure what the var would be named
-//
-// }
-//
-// console.assert(findLongestWord("book dogs") === "book")
-// console.assert(findLongestWord("don't mess with Texas") === "Texas")
+function findLongestWord(sentence){
+  // create var for unpuncutatedString
+  var unpuncutatedString = "";
+  // remove punctuation from string
+  unpuncutatedString = sentence.replace("'", "");
+  // need to split the string into an array
+  var stringSplit = unpuncutatedString.split(" ");
+  // need to create a placeholder for longest words
+  var longestWord = "";
+
+  // need a way to count each letter in the string of words
+  for (var i = 0; i < stringSplit.length; i++) {
+    if(stringSplit[i].length > longestWord.length){
+      longestWord = stringSplit[i];
+    }
+  }
+  return longestWord;
+}
+
+console.assert(findLongestWord("book dogs") === "book")
+console.assert(findLongestWord("don't mess with Texas") === "Texas")
