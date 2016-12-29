@@ -1,15 +1,15 @@
 // PART 0: Write a function called squareDance() that squares each number in an array.
-function squareDance(numbersArray){
+function squareDance(numbersArrays){
   // var squaredNumber = Math.pow(numbersArray[1],2);
-  for (var i = 0; i < numbersArray.length; i++) {
+  for (var i = 0; i < numbersArrays.length; i++) {
     // hold a referecne to current number
     var currentNumber = numbersArray[i];
     // square the current number and set it back into array.
-    numbersArray[i] = Math.pow(currentNumber, 2);
+    numbersArrays[i] = Math.pow(currentNumber, 2);
     // array[i]
   }
   // console.log(numbersArray);
-  return numbersArray;
+  return numbersArrays;
 }
 
 console.assert(squareDance([1, 2])[1] === 4)
@@ -91,20 +91,22 @@ console.assert(capitalizeAll('every day is like sunday.') === 'Every Day Is Like
 
 var paragraph = 'it was a fine morning. the wine was good. light slanted in through the cafe window.'
 
-function properSentenses(paragraph){
+function properSentences(string){
   // we create a reference to the paragraph and say that we want to split at every period in that string.
-  var paragraphArray = paragraph.split(". ");
+  var sentenceArray = string.split(". ");
 // So we create a loop that will run through the array of the paragraph, and split at every period.
-  for (var i = 0; i < paragraphArray.length; i++) {
-    // then we create a variable for the currentSentence that will equal the paragraphArray. The i means we will do something in the array.
-    var currentSentence = paragraphArray[i];
-    // here we create a variable for the sentencewordArray that equals splitting between words
-    var sentenceWordsArray = currentSentence.split(" ");
+  for (i = 0; i < sentenceArray.length; i++) {
 
-    var currentwordArray = sentenceWordsArray[i];
+    if(i !== sentenceArray.length -1 ){
+      sentenceArray[i] = sentenceArray[i]charAt(0).toUpperCase() + sentenceArray[i].slice(1) + ". ";
+    } else{
+      sentenceArray[i] = sentenceArray[i].charAt(0).toUpperCase() + sentenceArray[i].slice(1);
+    }
 
   }
+  sentenceArray = sentenceArray.join("");
 
+  return sentenceArray;
 }
 
 
@@ -117,14 +119,32 @@ console.assert(properSentences(paragraph) === "It was a fine morning. The wine w
 // []
 // []
 // []
-function iPutTheFunIn(sentence){
-  var sentenceArray = sentence.slice
+function iPutTheFunIn(string){
+
+  var firstSlice = "";
+
+  var seconSlice = "";
+
+  var newWord = "";
+
+  firstSlice = string.slice(0, string.length/2);
+
+  secondSlice = string.slice(string.length/2);
+
+  newWord = firstSlice + "fun" + secondSlice;
+
+  return newWord;
 }
 //
 console.assert(iPutTheFunIn("funerary") === "funefunrary")
 console.assert(iPutTheFunIn("reds") === "refunds")
 
 // PART 5: write a function called pipeline(). it should take three inputs: (1) a starting value, (2) a function, and (3) another function. it should use functions (2) and (3) on the starting value, one after the other, and return a new value that has been processed by both function (2) and function (3).
+
+  // write function pipeline()
+  function pipeline(value, function1, function2){
+    return function2(function1(value));
+  }
 
 // the following three tests all correspond to the pipeline() function.
 
