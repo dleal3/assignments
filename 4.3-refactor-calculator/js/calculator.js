@@ -10,14 +10,27 @@ var $ = require("jquery");
 
 $(function(){
   // need to declare a var for body and assign it a value
-var $body = $(".calc__body");
-var $numberKeyElementClear = $body.find("[data-js='numberKeyClear']");
-var $numberKeyElementEqual = $body.find("[data-js='numberKeyEqual']");
+var $body = $("calc__body");
+var $numberKeyClearElement = $body.find("[data-js='numberKeyClear']");
+var $numberKeyEqualElement = $body.find("[data-js='numberKeyEqual']");
 var $outputWindowElement = $body.find("[data-js='output__Window']");
+var $numberKeyElement = $body.find("[data-js='numberKey']");
 
-$numberKeyElementEqual.on("click", function (e){
-  var answerOutput = eval($outputWindowElement.html());
-  $outputWindowElement.html(answerOutput);
-});
+  $numberKeyElement.on("click", function(e){
+    var $clickedNumberString = $(this);
+    var numberOutputString = $outputWindowElement.text();
+    var numberString = $clickedNumberString.text();
+    $outputWindowElement.text(numberOutputString + numberString);
+
+    $numberKeyEqualElement.on("click", function(e){
+      var total = eval($outputWindowElement.text());
+      $outputWindowElement.text(total);
+    });
+
+    $clearElement.on("click", function(){
+      var $this = $("this");
+      $this = $outputWindowElement.text("");
+    });
+  });
 
 });
