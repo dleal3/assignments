@@ -1,6 +1,6 @@
 describe("About Functions", function() {
-
-  it('should declare functions' function() {
+//
+  it("should declare functions", function() {
 
     function subtract(a, b) {
       return a - b;
