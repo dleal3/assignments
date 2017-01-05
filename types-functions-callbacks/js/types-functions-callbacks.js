@@ -59,7 +59,15 @@ console.assert(average(100,200) === 150)
  inputs is not a number, it will return "null."
  */
 
-
+function sum(a, b) {
+  // USED CONTEXT CLUES TO KNOW WE NEED AN IF STATEMENT, BUT NOT SURE HOW TO DEFINE IF A OR B IS NOT A NUMBER, SO LOOKED UP SOME OF THE STUDENTS CODE AND SAW THAT DAVID SPECIFICALLY SAID IF NUMBER 1 OR NUMBER 2 === FALSE RETURN NULL, SO I USED FALSE IN THIS CASE.
+  if(a || b === false){
+    return null;
+  }
+  else{
+    return a + b;
+  }
+}
 console.assert(sum(867, 5309) === 6176);
 console.assert(sum('867', 5309) === null);
 console.assert(sum(true, 5) === null);
