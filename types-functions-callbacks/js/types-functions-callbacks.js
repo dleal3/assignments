@@ -46,7 +46,9 @@ console.assert(sum(4, 100) === 104);
 // repeating yourself, use your sum function inside
 // of your average function.
 
-
+function average(a, b) {
+  return sum / 2
+}
 console.assert(average(8,12) === 10)
 console.assert(average(100,200) === 150)
 
