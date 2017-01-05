@@ -33,7 +33,9 @@ console.assert(doubleNum(5) === 10)
  * inputs and computes the sum of those two numbers.
  */
 
-
+function sum(a, b) {
+  return a + b
+}
 console.assert(sum(8, 11) === 19);
 console.assert(sum(4, 100) === 104);
 
