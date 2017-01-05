@@ -11,6 +11,7 @@ export default React.createClass({
     return (
       <form>
         <input></input>
+        <input></input>
       </form>
     )
   }
