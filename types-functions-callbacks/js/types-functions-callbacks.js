@@ -15,11 +15,14 @@ console.assert(addOne(1) === 2)
 // Part 0
 
 // Fix the following code so that the assertion passes.
-
-var doubleNum = function(num) {
-    var newNum = num * 2
+function doubleNum(a){
+  return a * 2
+  // THIS IS THE WAY THAT MAKES SENSE TO ME/ FOLLOWING THE STRUCTURE OF THE EXAMPLE ABOVE
 }
-
+// COMMENTED OUT THE CODE THAT NEEDED CORRECTING
+// var doubleNum = function(num) {
+//     var newNum = num * 2
+// }
 console.assert(doubleNum(5) === 10)
 
 
