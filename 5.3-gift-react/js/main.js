@@ -2,12 +2,20 @@
 import React from 'react'
 
 export default React.createClass({
-  getInitialState() {
+  getInitialState: function() {
     return {
-      output: "enter gift item here"
+      input: ''
     };
   },
-
+  onAddButtonClick(e) {
+    e.preventDefault();
+    var currentInputValue = this.state.inputValue;
+  },
+  updateInputValue: function(evt) {
+    this.setState({
+      inputValue: evt.target.value
+    });
+  },
 
   render() {
     return (
@@ -15,8 +23,8 @@ export default React.createClass({
       <h2 className= "h2" > Gifts To Buy </h2>
       <main>
         <form>
-          <input placeholder= "Enter Text Here" className= "giftInputText" value={ this.state.inputValue } onChange={this.updateInputValue}></input>
-          <input placeholder= "ADD" className= "addButton" onClick={this.onAddButtonClick}></input>
+          <input placeholder= "Enter Text Here" className= "giftInputText" onvalue={ this.state.inputValue } onChange={ this.updateInputValue } type="text" value={this.state.inputValue} ></input>
+          <input placeholder= "ADD" className= "addButton" type="submit" onClick={this.onADDButtonClick}></input>
           <div className="listItems_div">
             <article className="listItem"></article>
             <article className="totalAmount">
