@@ -22,7 +22,11 @@ export default React.createClass({
 
       <form className="comment__form">
       <img className="comment__image"src="https://avatars1.githubusercontent.com/u/21375521?v=3&s=96"></img>
-      <h2 className="comment__name"><a href="">Justin Strayhorn</a></h2>
+      <h2 className="comment__name"><a href="">Justin Strayhorn</a>  Whoooaaaa man! </h2>
+      <h3 className="post__date"> May 13, 2015 </h3>
+      <img className="comment__image2" src="https://avatars1.githubusercontent.com/u/23609224?v=3&s=96"></img>
+      <h2 className="comment__name2"><a href=""> Lucio Gutierrez</a> This is looking cool! </h2>
+      <h3 className="post__date2"> May 13, 2015 </h3>
       </form>
       </section>
       </div>
