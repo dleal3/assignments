@@ -1,6 +1,15 @@
+.div__container {
+  /*background-color: #90949c;*/
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+}
+
 .post__container {
+  background-color: white;
   width: 500px;
-  border: solid black 1px;
+  border: color: #90949c; 5px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 105px;
@@ -15,6 +24,7 @@
   font-size: smaller;
   position: absolute;
   margin-top: 0;
+  margin-left: 7px;
 }
 
 .post__likes {
@@ -28,4 +38,23 @@
   position: fixed;
   margin-top: 20px;
   color: #90949c;
+  margin-left: 7px;
+}
+
+.comment__form {
+  background-color: #f6f7f9;
+  height: 100px;
+}
+
+.comment__image {
+  width: 40px;
+  height: 40px;
+}
+
+.comment__name {
+  display: inline-block;
+  font-size: smaller;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 7px;
 }
