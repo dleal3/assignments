@@ -16,16 +16,16 @@ export default React.createClass({
         <img src="https://avatars1.githubusercontent.com/u/23640802?v=3&s=40" className="profile__image"></img>
         <h2 className="post__title"> <a href=""> Instant Articles </a></h2>
         <h3 className="post__date"> May 13, 2015 </h3>
-      <p className=""> Welcome! To see these stories in the Instant Articles format, you must be on the latest version of the Facebook app for iPhone or Android.</p>
-      <p> Learn more about this new tool for publishers at <a href=""> instantarticles.fb.com </a> </p>
+      <p className=""> Is it midterm already?? It feels like only yesterday we were learning about how to git r done!</p>
+      <p> Checkout my progress at <a href=""> medium.com/@dleal3 </a> </p>
       <p className="post__likes"> 778 Likes  315 Comments  53 Shares </p>
 
       <form className="comment__form">
       <img className="comment__image"src="https://avatars1.githubusercontent.com/u/21375521?v=3&s=96"></img>
-      <h2 className="comment__name"><a href="">Justin Strayhorn</a>  Whoooaaaa man! </h2>
+      <h2 className="comment__name"><a href="">Justin Strayhorn</a> Time flies when your having fun! </h2>
       <h3 className="post__date"> May 13, 2015 </h3>
       <img className="comment__image2" src="https://avatars1.githubusercontent.com/u/23609224?v=3&s=96"></img>
-      <h2 className="comment__name2"><a href=""> Lucio Gutierrez</a> This is looking cool! </h2>
+      <h2 className="comment__name2"><a href=""> Lucio Gutierrez</a> Thumbs up on your blog post! </h2>
       <h3 className="post__date2"> May 13, 2015 </h3>
       </form>
       </section>
