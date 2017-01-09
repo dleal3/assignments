@@ -1,33 +1,22 @@
-// import React from 'react'
-//
-//
-// export default React.create({
-//
-//   render() {
-//     return (
-//       <section>
-//         <header>
-//           <img></img>
-//           <h2></h2>
-//           <p> This is a test </p>
-//         </header>
-//         <p></p>
-//         <p></p>
-//         <button></button>
-//         <button></button>
-//         <button></button>
-//       </section>
-//     )
-//   }
-//
-// })
+// [] - Create an article container
+// [] - Add an image for the profile
+// [] - Add profile name
+// [] - Include article publish date
+// [] - Include area for body text (content)
+
+
 import React from 'react'
 
+export default React.createClass({
 
-render() {
-  return (
-    <section>
-    <h2> gifts to buy </h2>
-    </section>
-  )
-};
+  render() {
+    return (
+      <section>
+      <img></img>
+      <h2> Instant Articles </h2>
+      <h3> May 13, 2015 </h3>
+      <p> LOREM IPSUM </p>
+      </section>
+    )
+  }
+})
