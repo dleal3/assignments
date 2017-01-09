@@ -15,6 +15,13 @@ export default React.createClass({
       ]
     }
   },
+// ADAM HELPED WITH GETTING THE clickedLike BUTTON TO ADD ONE
+  clickedLike (e) {
+    var numOfLikesEl = e.currentTarget.parentNode.children[1]
+    var numOfLikesValue = parseInt(numOfLikesEl.textContent)+1
+    numOfLikesEl.textContent = numOfLikesValue
+    e.currentTarget.style.color = "blue"
+  },
 
   render() {
     return (
@@ -25,7 +32,8 @@ export default React.createClass({
         <h3 className="post__date"> January 8, 2017 </h3>
       <p className=""> Is it midterm already?? It feels like only yesterday we were learning about how to git r done!</p>
       <p> Checkout my progress at <a href="" className="link"> github.com/dleal3 </a> </p>
-      <p className="post__likes"> 778 Likes  315 Comments  53 Shares </p>
+      <p className="post__likes"><span onClick={ this.clickedLike } data-js="likeButton"> <i className="fa fa-thumbs-up" aria-hidden="true"></i> Like </span> <span data-js="numOfLikes">778</span> Likes  315 Comments  53 Shares </p>
+
 
       <form className="comment__form">
       <img className="comment__image"src="https://avatars1.githubusercontent.com/u/21375521?v=3&s=96"></img>
