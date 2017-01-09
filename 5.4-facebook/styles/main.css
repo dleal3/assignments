@@ -1,0 +1,25 @@
+.post__container {
+  width: 500px;
+  border: solid black 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 105px;
+}
+
+.profile__image {
+
+}
+
+.post__title {
+  display: inline-block;
+  font-size: smaller;
+  position: absolute;
+  margin-top: 0;
+}
+
+.post__date {
+  display: inline-block;
+  font-size: smaller;
+  position: fixed;
+  margin-top: 27px;
+}
