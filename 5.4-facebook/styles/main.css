@@ -17,9 +17,15 @@
   margin-top: 0;
 }
 
+.post__likes {
+  font-size: smaller;
+  color: #90949c;
+}
+
 .post__date {
   display: inline-block;
   font-size: smaller;
   position: fixed;
-  margin-top: 27px;
+  margin-top: 20px;
+  color: #90949c;
 }
