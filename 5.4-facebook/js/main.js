@@ -8,6 +8,13 @@
 import React from 'react'
 
 export default React.createClass({
+  getInitialState: function() {
+    return {
+      comments: [
+
+      ]
+    }
+  },
 
   render() {
     return (
