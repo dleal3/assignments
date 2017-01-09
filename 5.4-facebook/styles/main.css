@@ -48,7 +48,7 @@
 
 .comment__form {
   background-color: #f6f7f9;
-  height: 100px;
+  height: 150px;
 }
 
 .comment__image {
@@ -83,4 +83,23 @@
   margin-left: 47px;
   margin-top: -7px;
   font-weight: lighter;
+}
+
+.comment__image3 {
+  height: 30px;
+  width: 30px;
+  margin-left: 47px;
+}
+.comment__name3 {
+  font-size: x-small;
+  font-weight: lighter;
+  margin-left: 82px;
+  margin-top: -34px;
+}
+.post__date3 {
+  font-size: x-small;
+  font-weight: lighter;
+  color: #90949c;
+  margin-left: 82px;
+  margin-top: -7px;
 }
