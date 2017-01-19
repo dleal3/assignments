@@ -14,13 +14,32 @@ body {
 }
 
 .header {
-  color: #535353;
+  color: #333333;
 }
 
 .contact_links {
   margin-left: 10px;
   display: block;
   margin-bottom: 5%;
-  color: #797979;
+  color: #333333;
+  text-decoration: none;
+}
+
+.contact_container {
+ text-align: center;
+ border: solid 1px;
+ width: 20%;
+ margin-left: 40%;
+ margin-top: 15%;
+ background-color: #cccccc;
+ color: #333333;
+ text-decoration: none;
+}
+
+.email_link{
+  text-decoration: none;
+}
+
+.back_button {
   text-decoration: none;
 }

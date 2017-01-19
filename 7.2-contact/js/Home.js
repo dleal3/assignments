@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-
+// refered to David's code to get my home page default props to display just the contact names
 export default React.createClass({
   getDefaultProps(){
     return {
@@ -28,6 +28,7 @@ export default React.createClass({
     }
   },
 
+// Also used Davids code as reference to see how he rendered just the contact but included a function that would Link to further details of the clicked name.
   render (){
     return (
       <div className="home_container">
