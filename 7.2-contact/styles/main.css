@@ -1,0 +1,26 @@
+body {
+  background-image: url(http://merlin.rebrovic.net/media/external/2013-05-20_smartphone_hand.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.home_container {
+  text-align: center;
+  border: solid 1px;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 15%;
+  background-color: #cccccc;
+}
+
+.header {
+  color: #535353;
+}
+
+.contact_links {
+  margin-left: 10px;
+  display: block;
+  margin-bottom: 5%;
+  color: #797979;
+  text-decoration: none;
+}

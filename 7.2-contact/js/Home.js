@@ -30,13 +30,13 @@ export default React.createClass({
 
   render (){
     return (
-      <div>
-        <h2>Contact List</h2>
+      <div className="home_container">
+        <h2 className="header">Daniels Connections</h2>
         {
           this.props.contacts.map(
             (contact, i)=>{
               return (
-                <Link to={`${contact.name}/${contact.email}/${contact.phone}/${contact.location}`}key={i} className="">
+                <Link to={`${contact.name}/${contact.email}/${contact.phone}/${contact.location}`}key={i} className="contact_links">
                   {contact.name}
                 </Link>
               )
@@ -47,20 +47,3 @@ export default React.createClass({
     )
   }
 })
-
-
-
-
-
-
-
-// export default React.createClass({
-//   render() {
-//     return (
-//       <section>
-//
-//         <p> This is a fucking test to fucking see my shit work  </p>
-//       </section>
-//     )
-//   }
-// })
