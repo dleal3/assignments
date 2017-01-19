@@ -1,20 +1,16 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, hashHistory } from 'react-router'
-import App from './App'
-import Welcome from './Welcome'
 import Home from './Home'
+import Contacts from './Contacts'
+
+
 
 render(
   (
     <Router history={hashHistory}>
-      <Route component={App}>
-        <Route path="/" component={ Welcome } />
-        <Route path="/home" component={ Home } />
-        // <Route path="/post" component={ Post } />
-        // <Route path="/projects" component={ Projects } />
-        // <Route path="/resume" component={ Resume } />
-      </Route>
+        <Route path="/" component={ Home } /></Route>
+        <Route path="/:name/:email/:phone/:location" component={ Contacts } />
     </Router>
   ),
   document.getElementById('app')
