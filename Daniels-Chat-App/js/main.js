@@ -1,3 +1,4 @@
+// Grabbing react from node_modules
 import React from 'react'
 import { ajax } from 'jquery'
 
@@ -76,34 +77,10 @@ export default React.createClass({
           <h6 className="user-marg"> justin </h6>
 
         </aside>
-        <section className="navBar">
-          <img className="navIcons" src=""/>
-          <img className="navIcon-star" src=""/>
-          <img className="navIcon-at" src=""/>
-            <input placeholder="Search" className="searchBar" type="text"/>
-          <img className="navIcon-chat" src=""/>
-          <img className="navIcon-settings" src=""/>
-          <img className="navIcon-phone" src=""/>
 
-        </section>
 
-        <section>
-          <article className="mainSection">
-            {
-              this.state.chatHistory.map((chat, i)=>{
-                return <p className="posts"><img className="chatImage" src=""/><h4 className="userName">User Name: </h4><span key={i}> { chat.currentChat} </span></p>
-              })
-            }
-
-          </article>
-      <form className="chatInput">
-        <button className="submitButton" onClick={ this.onChatSubmit } type="submit"> + </button>
-        <input className="chatBar" onChange={this.onChatChange} placeholder=" Type message here" type="text"/>
-      </form>
-    </section>
-  </section>
     )
-  },
+  }
 
 
 

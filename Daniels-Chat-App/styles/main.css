@@ -1,0 +1,76 @@
+.giftInputText {
+  border: none;
+  height: 35px;
+  width: 86%;
+}
+
+.addButton {
+  border: none;
+  color: white;
+  background-color: #7DC476;
+  display: inline-block;
+  font-size: 16px;
+  height: 42px;
+  width: 13.1%;
+  text-align: center;
+}
+
+.h2 {
+  text-align: center;
+}
+
+.section{
+  background-color: #F5F5F5;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.listItems_div {
+  margin-top: -2px;
+}
+
+.listItem {
+  border-top: solid 1px gainsboro;
+  font-family: helvetica;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  margin-top: : 0px;
+  margin-bottom: 5px;
+}
+
+.totalAmount {
+  background-color: #F5F5F5;
+  border-top: solid 1px gainsboro;
+  color: red;
+  font-family: helvetica;
+  font-size: 20px;
+  height: 40px;
+  padding-right: 10px;
+  padding-top: 7px;
+  text-align: right;
+  -webkit-apperance; initial;
+}
+
+.totalTextOnly {
+  color: black;
+  display: inline-block;
+  font-family: helvetica;
+  font-size: 20px;
+  height: 40px;
+  margin-left: 432px;
+  -webkit-appearance: initial;
+}
+
+.p {
+  color: black;
+  display: inline-block;
+  margin: 0;
+  margin-right: -4px;
+}
+
+.p__totalCost {
+  color: black;
+  display: inline-block;
+  margin: 0;
+}
