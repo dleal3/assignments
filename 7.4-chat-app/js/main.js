@@ -7,9 +7,6 @@ import { ajax } from 'jquery'
 
 
 // I referred to the previous project 5.3-react giftcard to get familiar again with how we use the react boiler plate
-// I also had to refer to Lucio's code and use his as reference for this project. I tried to apply what was on the previous assignments into this one, but I couldn't get this to show in my browser with out looking at Lucio's code.
-
-
 
 export default React.createClass({
   componentDidMount() {
@@ -66,12 +63,16 @@ export default React.createClass({
     return(
       <section>
         <aside className="aside">
-          <h2 className="tiy"> The Iron Jedi's </h2>
-          <h4 className="channel"> STAR JEDi's </h4>
-          <h6 className="user-marg"> daniel </h6>
-          <h6 className="user-marg"> david </h6>
-          <h6 className="user-marg"> terika </h6>
-          <h6 className="user-marg"> reese </h6>
+          <h2 className="IronJediChat"> Iron Jedi's Chat </h2>
+          <h6 className="user-marg"> Nic </h6>
+          <h6 className="user-marg"> Lucio </h6>
+          <h6 className="user-marg"> David </h6>
+          <h6 className="user-marg"> Reese </h6>
+          <h6 className="user-marg"> Daniel </h6>
+          <h6 className="user-marg"> Terika </h6>
+          <h6 className="user-marg"> Justin </h6>
+          <h6 className="user-marg"> Jeremy </h6>
+
 
         </aside>
         <section className="navBar">
