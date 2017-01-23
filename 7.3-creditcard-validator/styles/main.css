@@ -1,0 +1,26 @@
+.invalid input {
+  border-color: red;
+}
+
+.valid input {
+  border-color: green;
+}
+
+
+body {
+  background-image: url(https://lendedu.com/wp-content/uploads/2016/06/chase-sapphire-preferred-card.png);
+  background-repeat: no-repeat;
+  background-size: 45%;
+}
+
+
+.cardForm {
+  margin-top: 21%;
+  margin-bottom: -18%
+}
+
+.submit {
+  margin-top: 19%;
+  border-radius: 12px;
+  color: #535353;
+}
