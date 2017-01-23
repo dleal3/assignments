@@ -1,5 +1,15 @@
+// I had to refer to Lucio Gutierrez code for this. I followed his code to be able to get the project completed.
+//  I would not have been able to have a project with out Lucio's code reference.
+
+
 import React from 'react'
 import { ajax } from 'jquery'
+
+
+// I referred to the previous project 5.3-react giftcard to get familiar again with how we use the react boiler plate
+// I also had to refer to Lucio's code and use his as reference for this project. I tried to apply what was on the previous assignments into this one, but I couldn't get this to show in my browser with out looking at Lucio's code.
+
+
 
 export default React.createClass({
   componentDidMount() {
@@ -10,6 +20,7 @@ export default React.createClass({
     })
   },
 
+//
   getInitialState() {
     return {
       chats: "",
@@ -55,35 +66,21 @@ export default React.createClass({
     return(
       <section>
         <aside className="aside">
-          <h2 className="tiy"> TIY San Antonio </h2>
-          <h4 className="channel"> Channels </h4>
-          <div className="channels">
-            <p className="channel-marg"> all-things-spurs </p>
-            <p className="channel-marg"> # announcments </p>
-            <p className="channel-marg"> # fee </p>
-            <p className="channel-marg"> # fee-lecture-notes </p>
-            <p className="channel-marg"> # js-junkie </p>
-            <p className="channel-marg"> # random </p>
-          </div>
-          <h4 className="channels"> Direct Message </h4>
+          <h2 className="tiy"> The Iron Jedi's </h2>
+          <h4 className="channel"> STAR JEDi's </h4>
           <h6 className="user-marg"> daniel </h6>
           <h6 className="user-marg"> david </h6>
           <h6 className="user-marg"> terika </h6>
           <h6 className="user-marg"> reese </h6>
-          <h6 className="user-marg"> nic </h6>
-          <h6 className="user-marg"> jason </h6>
-          <h6 className="user-marg"> jeremy </h6>
-          <h6 className="user-marg"> justin </h6>
 
         </aside>
         <section className="navBar">
-          <img className="navIcons" src=""/>
-          <img className="navIcon-star" src=""/>
-          <img className="navIcon-at" src=""/>
-            <input placeholder="Search" className="searchBar" type="text"/>
-          <img className="navIcon-chat" src=""/>
-          <img className="navIcon-settings" src=""/>
-          <img className="navIcon-phone" src=""/>
+          <img className="navIcons" src="https://s-media-cache-ak0.pinimg.com/736x/60/b7/30/60b73041000047d4e8737d4eee9c5a08.jpg"/>
+          <img className="navIcon-star" src="http://www.mesewcrazy.com/wp-content/uploads/2015/09/Vader_stencil.png"/>
+          <img className="navIcon-at" src="http://blog.attackemart.in/content/images/2015/12/kylo-ren-helmet.svg"/>
+          <img className="navIcon-chat" src="http://www.clipartkid.com/images/778/baby-yoda-clipart-CO1BV1-clipart.jpg"/>
+          <img className="navIcon-settings" src="http://www.hothbricks.com/wp-content/uploads/2013/02/10240-red-five-xwing-starfighter-ucs-2.jpg"/>
+          <img className="navIcon-phone" src="https://images-na.ssl-images-amazon.com/images/G/01/toys/detail-page/2011/B0071NOU78-2.jpg"/>
 
         </section>
 
@@ -91,7 +88,7 @@ export default React.createClass({
           <article className="mainSection">
             {
               this.state.chatHistory.map((chat, i)=>{
-                return <p className="posts"><img className="chatImage" src=""/><h4 className="userName">User Name: </h4><span key={i}> { chat.currentChat} </span></p>
+                return <p className="posts"><img className="chatImage" src="http://www.fontspace.com/preview/m/a0217bd3c2e5532848ea49cfa3e2e789.png"/><h4 className="userName">: </h4><span key={i}> { chat.currentChat} </span></p>
               })
             }
 
