@@ -102,12 +102,21 @@ textarea {
     2. https://css-tricks.com/forums/topic/62-5-font-size/
 */
 
+
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: rgba(236, 240, 241,1.0);
+}
+.nav {
+  list-style: none;
+  font-size: 1em;
+}
+
+.nav_links {
+  display: inline-block;
 }
 
 .article {
@@ -140,11 +149,16 @@ body {
   padding: 8px 16px;
 }
 
-.article__image {
+.article__image1 {
+  position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+}
+
+.image1_text {
+  text-align: center;
 }
 
 .article__title {
