@@ -199,7 +199,11 @@ body {
   list-style: none;
   border-bottom: solid 1px;
   text-align: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
+
+
 
 .blueDiv {
   background-color: rgb(44, 73, 133);
@@ -211,6 +215,8 @@ body {
   list-style: none;
   border-bottom: solid 1px;
   text-align: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 .blackDiv {
@@ -223,6 +229,8 @@ body {
   list-style: none;
   border-bottom: solid 1px;
   text-align: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 .chooseButton {
@@ -336,7 +344,7 @@ body {
     1. https://css-tricks.com/fighting-the-space-between-inline-block-elements/
 */
 
-@media only screen and (min-width: 42em) {
+@media only screen and (min-width: 52em) {
     /* Style adjustments for viewports that meet the condition */
     .article {
       display: inline-block;
@@ -345,13 +353,13 @@ body {
     }
 }
 
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 290em) {
   .article__title {
     font-size: 2.8rem;
   }
 }
 
-@media only screen and (min-width: 125em){
+@media only screen and (min-width: 805em){
   .article__link {
     font-size: 2rem;
   }
