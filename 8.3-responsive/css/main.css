@@ -113,6 +113,7 @@ body {
 .nav {
   list-style: none;
   font-size: 1em;
+  margin-left: 36%;
 }
 
 .nav_links {
@@ -121,10 +122,7 @@ body {
 
 .article {
   border-bottom: 2px solid rgba(142, 68, 173, 0.33);
-  /*margin-bottom: 120px;*/
-  /*padding-right: 7px;
-  padding-bottom: 14px;
-  padding-left: 7px;*/
+  border: solid 0.5px;
   margin-left:
 }
 
@@ -155,7 +153,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 60%;
+  padding-bottom: 2%;
 }
 
 .headerImage {
@@ -169,8 +168,8 @@ body {
   color: white;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 33%;
+  transform: translate(-50%, -45%);
   font-size: 2em;
 }
 
@@ -193,6 +192,7 @@ body {
   background-color: rgb(81, 146, 81);
   color: white;
   text-align: center;
+  padding-top: 0.1px;
 }
 
 .greenDivLinks {
@@ -209,6 +209,8 @@ body {
   background-color: rgb(44, 73, 133);
   color: white;
   text-align: center;
+  padding-top: 0.1px;
+
 }
 
 .blueDivLinks {
@@ -223,6 +225,8 @@ body {
   background-color: rgb(17, 17, 17);
   color: white;
   text-align: center;
+  padding-top: 0.1px;
+
 }
 
 .blackDivLinks {
@@ -236,13 +240,18 @@ body {
 .chooseButton {
   border: solid 2px;
   border-radius: 25px;
-  margin-left: 40%;
-  padding-bottom: 1%;
+  margin-left: 42%;
   margin-bottom: 5%;
 }
 
+.smallArticles {
+  display: block;
+}
+
+
 .footer {
   background-color: rgb(17, 17, 17);
+  text-align: center;
 }
 
 .footer_text{
