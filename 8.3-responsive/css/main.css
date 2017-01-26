@@ -113,7 +113,6 @@ body {
 .nav {
   list-style: none;
   font-size: 1em;
-  margin-left: 36%;
 }
 
 .nav_links {
@@ -170,7 +169,7 @@ body {
   left: 50%;
   top: 33%;
   transform: translate(-50%, -45%);
-  font-size: 2em;
+  font-size: 1.4em;
 }
 
 .article__title {
@@ -240,14 +239,31 @@ body {
 .chooseButton {
   border: solid 2px;
   border-radius: 25px;
-  margin-left: 42%;
-  margin-bottom: 5%;
+  margin-left: 39%;
+  margin-bottom: 5%
 }
 
 .smallArticles {
   display: block;
 }
 
+.smallArticle1div {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.smallArticle2div {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.smallArticle3div {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.smallArticle4div {
+  padding-left: 1%;
+  padding-right: 1%;
+}
 
 .footer {
   background-color: rgb(17, 17, 17);
