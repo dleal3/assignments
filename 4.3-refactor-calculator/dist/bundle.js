@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var calculator = __webpack_require__(1)
+	var buttons = __webpack_require__(1);
 	
 	
 	// [x]`addEventListener` accepts TWO arguments:
@@ -71,32 +71,27 @@
 	// [x] Rename html buttons to just one data-js class called Button (this provides shorter code for js that allows each button to do it's job and send it in the output)
 	// [x] Need to make a variable for the equalButton that has a data-js class called numberKeyEqual
 	var $ = __webpack_require__(2);
-	
-	$(function(){
-	  // need to declare a var for body and assign it a value
-	var $body = $("calc__body");
-	var $numberKeyClearElement = $body.find("[data-js='numberKeyClear']");
-	var $numberKeyEqualElement = $body.find("[data-js='numberKeyEqual']");
-	var $outputWindowElement = $body.find("[data-js='output__Window']");
-	var $numberKeyElement = $body.find("[data-js='numberKey']");
-	
-	  $numberKeyElement.on("click", function(e){
-	    var $clickedNumberString = $(this);
-	    var numberOutputString = $outputWindowElement.text();
-	    var numberString = $clickedNumberString.text();
-	    $outputWindowElement.text(numberOutputString + numberString);
-	
-	    $numberKeyEqualElement.on("click", function(e){
-	      var total = eval($outputWindowElement.text());
-	      $outputWindowElement.text(total);
-	    });
-	
-	    $clearElement.on("click", function(){
-	      var $this = $("this");
-	      $this = $outputWindowElement.text("");
-	    });
+	$(function (){
+	  var $body = $("body");
+	  var $nameButtonElements = $body.find("[data-js='buttonNum']");
+	  var $outputElement = $body.find("[data-js='outputDisplay']");
+	  var $equalButtonElement = $body.find("[data-js='buttonEqual']")
+	  $nameButtonElements.on("click", function(){
+	    var $this = $(this);
+	    var currentOutputDigits = $outputElement.text();
+	    var currentDigit = $this.text();
+	    $outputElement.text(currentOutputDigits+currentDigit);
+	    if ($this.text() === "C") {
+	      $outputElement.text("");
+	    }
+	    if ($this.text() === "X") {
+	      $outputElement.text(currentOutputDigits+"*");
+	    }
+	    if ($this.text() === "=") {
+	      var answer = eval($outputElement.html());
+	      $outputElement.text(answer.toFixed(3));
+	    }
 	  });
-	
 	});
 
 

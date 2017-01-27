@@ -1,4 +1,4 @@
-var buttons = require("./buttons");
+var buttons = require("./button");
 
 
 // [x]`addEventListener` accepts TWO arguments:
