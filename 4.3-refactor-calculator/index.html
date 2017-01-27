@@ -7,49 +7,78 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>HTML Calculator</title>
-    <script src="dist/bundle.js"></script>
-    <link rel="stylesheet" href="styles/main.css">
+    <title>4.3 refactor Calculator Assingment</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="dist/bundle.js" charset="utf-8"></script>
   </head>
-
-  <body class="calc_body">
-    <form name="calc"
-          class="calculator"
-          action="index.html">
-    <table>
-      <tr>
-        <!-- Referred to Justin's code and saw how he labeled each button with a data-js= numberKey class. Here I'm going to follow what worked for his code and see if I can get the same to work for my code.  -->
-        <td><input data-js="numberKeyClear" class="clearButton" type="button" value="c"></td>
-        <td colspan="3"><h2 data-js="output__Window" class="output" type="text"></h2></td>
+  <body>
+    <!-- going to leave this html alone for now
+        - will change data-js later to match js in buttons.js-->
+    <table class="tableMain">
+      <tr class="tableRow">
+        <td><button class="button3" data-js="buttonNum" type="button" name="button">C</button></td>
+        <td class="calculatorOutput" data-js="outputDisplay" colspan="3" maxlength="12"></td>
       </tr>
-      <tr>
-        <td><input data-js="numberKey" class="numberButton" type="button" value="7"></td>
-        <td><input data-js="numberKey" class="numberButton" type="button" value="8"></td>
-        <td><input data-js="numberKey" class="numberButton" type="button" value="9"></td>
-        <td><input data-js="numberKey"class="symbolButton" type="button" value="/"></td>
+      <tr class="tableRow">
+        <!-- Row for buttons 7,8,9,/ -->
+        <td>
+          <button class="button" data-js="buttonNum" type="button" name="button">7</button>
+        </td>
+        <td>
+          <button class="button" data-js="buttonNum" type="button" name="button">8</button>
+        </td>
+        <td>
+          <button class="button" data-js="buttonNum" type="button" name="button">9</button>
+        </td>
+        <td>
+          <button class="button2" data-js="buttonNum" type="button" name="button">/</button>
+        </td>
       </tr>
-      <tr>
-        <td><input data-js="numberKey" class="numberButton" type="button" value="4"></td>
-        <td><input data-js="numberKey" class="numberButton" type="button" value="5"></td>
-        <td><input data-js="numberKey" class="numberButton" type="button" value="6"></td>
-        <td><input data-js="numberKey" class="symbolButton" type="button" value="x"></td>
+      <tr class="tableRow">
+        <!-- Row for buttons 4,5,6,X -->
+        <td>
+          <button class="button" data-js="buttonNum" type="button" name="button">4</button>
+        </td>
+        <td>
+          <button class="button" data-js="buttonNum"  type="button" name="button">5</button>
+        </td>
+        <td>
+          <button class="button" data-js="buttonNum" type="button" name="button">6</button>
+        </td>
+        <td>
+          <button class="button2" data-js="buttonNum" type="button" name="button">X</button>
+        </td>
       </tr>
-      <tr>
-        <td><input data-js="numberKey" class="numberButton" type="button" value="1"></td>
-        <td><input data-js="numberKey" class="numberButton" type="button" value="2"></td>
-        <td><input data-js="numberKey" class="numberButton" type="button" value="3"></td>
-        <td><input data-js="numberKey" class="symbolButton" type="button" value="-"></td>
+      <tr class="tableRow">
+        <!-- Row for buttons 1,2,3,- -->
+        <td>
+          <button class="button" data-js="buttonNum" type="button" name="button">1</button>
+        </td>
+        <td>
+          <button class="button" data-js="buttonNum" type="button" name="button">2</button>
+        </td>
+        <td>
+          <button class="button" data-js="buttonNum" type="button" name="button">3</button>
+        </td>
+        <td>
+          <button class="button2" data-js="buttonNum" type="button" name="button">-</button>
+        </td>
       </tr>
-      <tr>
-        <td><input data-js="numberKey" class="numberButton" type="button" value="0"></td>
-        <td><input data-js="numberKey" class="symbolButton" type="button" value="."></td>
-        <td><input data-js="numberKeyEqual" class="symbolButton" type="numberKeyPlus" value="="></td>
-        <td><input data-js="numberKey" class="symbolButton" type="button" value="+"></td>
+      <tr class="tableRow">
+        <!-- Row for buttons 0,.,=,+ -->
+        <td>
+          <button class="button" data-js="buttonNum" type="button" name="button">0</button>
+        </td>
+        <td>
+          <button class="button" data-js="buttonNum" type="button" name="button">.</button>
+        </td>
+        <td>
+          <button class="button3" data-js="buttonEqual" type="button" name="buttonEqual">=</button>
+        </td>
+        <td>
+          <button class="button2" data-js="buttonNum" type="button" name="button">+</button>
+        </td>
       </tr>
     </table>
-  </form>
-
   </body>
-
-
 </html>

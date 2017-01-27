@@ -1,4 +1,4 @@
-var calculator = require("./calculator")
+var buttons = require("./buttons");
 
 
 // [x]`addEventListener` accepts TWO arguments:
