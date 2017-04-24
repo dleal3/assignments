@@ -371,7 +371,7 @@ body {
 
 @media only screen and (min-width: 52em) {
     /* Style adjustments for viewports that meet the condition */
-    .article {
+    .main {
       display: inline-block;
       margin-right: -4px;
       width: 33%;

@@ -5,7 +5,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>3.4 Gift List</title>
+    <title> Daniel Leal Developer </title>
     <link rel="stylesheet" href="styles/main.css">
     <script
          src="https://code.jquery.com/jquery-3.1.1.js"
@@ -13,41 +13,98 @@
          crossorigin="anonymous">
     </script>
     <script src="js/main.js" charset="utf-8"></script>
+    <script src="https://use.fontawesome.com/5a2b63834a.js"></script>
   </head>
-  <body class="body" data-js="body"> <!--need to add class -->
-    <!--[x] Create a main section inside of body  -->
-    <!--[x] Create H2 inside of main for 'Gifts to Buy heading' -->
-    <!--[x] Create a Form inside of main underneath the H1 -->
-    <!--[x] Create an Input section inside form for the text area -->
+  <body>
 
-    <h2 class="h2" data-js="h2" >GIFTS TO BUY</h2> <!--need to add class -->
+  <!-- START NAVBAR -->
+  <div id="wrapper1" class="container-fluid">
+    <nav class="navigation">
+      <div class="left">
+        <div class="logo">Daniel Leal</div>
+        <div class="sublogo">Web Developer</div>
+      </div>
 
-    <main class="body" data-js="body"> <!--need to add class -->
-      <form class="items__form" action="index.html" method="post"> <!--added form class -->
-      <input
-        class="giftInputText"
-        data-js="text_input"
-        type="text"
-        name="giftInput"
-        placeholder="  enter gift here"
-        value=""></input>
-        <!--[x] Create a second input for the ADD 'button' -->
-        <input
-          class="addButton"
-          data-js="submit"
-          type="submit"
-          name="submitItemToList"
-          value="ADD"></input>
-        <div class="listItems_div" data-js="divElement">
-          <article class="listItem" data-js="articles">
-          </article>
-          <article class="totalAmount">
-            <p class="totalTextOnly">Total</p>
-            <p class="p">$</p>
-            <p class="p__totalCost" data-js="total">0</p>
-          </article>
-        </div>
-      </form>
-    </main>
-  </body>
+      <div class="right">
+        <ul>
+          <li><a href="#aboutme">ABOUT ME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#footer">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- END NAVBAR -->
+
+    <!-- START HEADER -->
+
+    <div id="header" class="container-fluid">
+      <div id="welcome">
+        <h1>WELCOME</h1>
+        <h4 style="padding-bottom: 50px">Let's create amazing things together.</h4>
+        <a href="#aboutme" class="btn btn-circle">
+          <i class="fa fa-angle-double-down"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- END WRAPPER -->
+
+  <!-- START ABOUT ME -->
+
+  <div id="aboutme" class="container-fluid">
+    <div class="row" style="padding-top: 50px">
+      <div class="col-md-8">
+        <h4>ABOUT ME</h4><br>
+        <p>Hi, my name is Daniel Leal and I am a Web Designer & Developer based in San Antonio, Texas. I love crafting beautiful web pages in HTML5, CSS3 and JavaScript or jQuery. My other skills include WordPress, Photoshop, Illustrator, React.Js .</p><br>
+
+        <p>I grew up in the countryside of Northumberland, the outdoors is my natrual home. It's where I feel alive and comfortable.</p><br>
+
+        <p>I believe there are so many things in this world that are yet to be done and so many new stories to be told. My goal in life is to capture those incredible moments and ensure they live on forever. </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="https://avatars2.githubusercontent.com/u/23640802?v=3&s=460" class="img-round"></img>
+      </div>
+    </div>
+  </div>
+
+  <!-- END ABOUT ME -->
+
+  <!-- START PORTFOLIO -->
+
+  <div id="portfolio" class="container-fluid">
+    <h4>PORTFOLIO</h4><br><br>
+    <div class="row">
+      <div class="col-md-6" style="margin-bottom: 10px">
+        <img src="http://s33.postimg.org/ef8wnuddr/pot1.png" class="img-responsive">
+      </div>
+      <div class="col-md-6" style="margin-bottom: 10px">
+        <img src="http://s33.postimg.org/ef8wnuddr/pot1.png" class="img-responsive">
+      </div>
+    </div>
+    <BR>
+    <div class="row">
+      <div class="col-md-6" style="margin-bottom: 10px">
+        <img src="http://s33.postimg.org/ef8wnuddr/pot1.png" class="img-responsive">
+      </div>
+      <div class="col-md-6" style="margin-bottom: 10px">
+        <img src="http://s33.postimg.org/ef8wnuddr/pot1.png" class="img-responsive">
+      </div>
+    </div>
+  </div>
+
+  <!-- END PORTFOLIO -->
+
+  <!-- START FOOTER -->
+  <div id="footer" class="container-fluid">
+    <a href="https://www.facebook.com/joelstephensonphoto/" target="blank" class="icon-btn facebook-icn"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/Joel_Stephenson" target="blank" class="icon-btn twitter-icn"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/joel_stephenson/" target="blank" class="icon-btn instagram-icn"><i class="fa fa-instagram"></i></a>
+    <br><br>
+    <p>COPYRIGHT © 2016 JOEL STEPHENSON</p>
+
+  </div>
+
+  <!-- END FOOTER -->
+</body>
 </html>

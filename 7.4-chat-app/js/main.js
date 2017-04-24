@@ -1,7 +1,5 @@
 // I had to refer to Lucio Gutierrez code for this. I followed his code to be able to get the project completed.
 //  I would not have been able to have a project with out Lucio's code reference.
-
-
 import React from 'react'
 import { ajax } from 'jquery'
 
