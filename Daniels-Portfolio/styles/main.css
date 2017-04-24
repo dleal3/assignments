@@ -12,10 +12,6 @@ body {
   height: 100%;
   width: 100%;
 }
-/* SCROLL DOWN ARROW */
-.fa-angle-double-down {
-  vertical-align: 8%;
-}
 
 /* NAVBAR */
 .navigation {
@@ -95,7 +91,10 @@ content: none;
   font-size: 50px;
 }
 
-
+/* SCROLL DOWN ARROW */
+.fa-angle-double-down {
+  vertical-align: 8%;
+}
 
 /* SECTION 1 WRAPPER */
 #wrapper1 {
